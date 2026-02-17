@@ -1,0 +1,164 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{indentfirst}
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{listingsutf8}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{tikz}
+
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+
+% Configuration du chemin des images
+\graphicspath{{figures/}}
+
+% Définir la couleur bleue de l'université
+\definecolor{univblue}{RGB}{0, 85, 145} 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% Marges de la page
+\geometry{
+    top=2.5cm,
+    bottom=2.5cm,
+    left=3cm,
+    right=2.5cm
+}
+
+% Configuration des titres de chapitres
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}
+{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-30pt}{20pt}
+
+% Configuration du style de code
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{
+	inputencoding=utf8,
+	extendedchars=true,
+	literate=
+	{é}{{\'e}}1
+	{è}{{\`e}}1
+	{à}{{\`a}}1
+	{ç}{{\c{c}}}1
+}
+
+
+
+% Configuration des liens hypertextes
+\hypersetup{
+    colorlinks=true,
+    linkcolor=univblue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Rapport PFE - Application Web E-commerce}
+}
+
+% En-tête et pied de page
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+	\setlength{\parskip}{0.5em}
+	\setlength{\parindent}{1.2em}
+	
+% Page de garde
+\input{chapters/titlepage}
+
+% Pages préliminaires
+\pagenumbering{roman}
+
+% Dédicaces
+\input{chapters/dedicaces}
+
+% Remerciements
+\input{chapters/remerciements}
+
+% Résumé
+\input{chapters/resume}
+
+% Liste des abréviations
+\input{chapters/abbreviations}
+
+% Table des matières
+\tableofcontents
+\cleardoublepage %Ça force les nouveaux chapitres à commencer proprement sur une nouvelle page.
+\newpage
+
+% Liste des figures
+\listoffigures
+%\addcontentsline{toc}{chapter}{Liste des figures}
+\cleardoublepage
+\newpage
+
+% Liste des tableaux
+\listoftables
+\addcontentsline{toc}{chapter}{Liste des tableaux}
+\cleardoublepage
+\newpage
+
+% Corps du rapport
+\pagenumbering{arabic}
+
+% Introduction générale
+\input{chapters/introduction}
+
+% Chapitre 1 : Présentation et cadrage du projet
+\input{chapters/chapitre1}
+
+% Chapitre 2 : Déroulement du projet
+\input{chapters/chapitre2}
+
+% Chapitre 3 : Spécification et modélisation
+\input{chapters/chapitre3}
+
+% Chapitre 4 : Implémentation et réalisation
+\input{chapters/chapitre4}
+
+% Conclusion générale et perspectives
+\input{chapters/conclusion}
+
+% Bibliographie
+\input{chapters/Webographie}
+
+% Annexes (optionnel)
+% \appendix
+% \input{chapters/annexes}
+
+\end{document}

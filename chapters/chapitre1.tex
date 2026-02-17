@@ -1,0 +1,143 @@
+\cleardoublepage
+\thispagestyle{empty}
+\markboth{Chapitre 1 : Présentation et cadrage du projet}{}
+
+\refstepcounter{chapter}
+\addcontentsline{toc}{chapter}{Contexte général du projet}
+
+\vspace*{3cm}
+
+\begin{center}
+	{\Huge\bfseries CHAPITRE \thechapter}
+	
+	\vspace{0.8cm}
+	\rule{10cm}{1.2pt}
+	
+	\vspace{0.8cm}
+	{\LARGE Contexte général du projet}
+	
+	\vspace{0.8cm}
+	\rule{10cm}{1.2pt}
+\end{center}
+
+\vspace*{\fill}
+
+\newpage
+
+\section{Introduction}
+
+Dans un contexte marqué par la digitalisation croissante des activités commerciales, les entreprises, qu’elles soient petites, moyennes ou grandes, ont désormais besoin de solutions informatiques leur permettant de gérer efficacement leurs opérations. La gestion des produits, des commandes, des utilisateurs et des transactions constitue aujourd’hui un élément central de la compétitivité.
+
+Ce chapitre présente le cadre général de notre projet. Il expose le contexte, la problématique, les objectifs, ainsi qu’une étude de l’existant afin de justifier la solution proposée.
+
+\section{Présentation du projet}
+
+Le projet réalisé consiste en la conception et le développement d’un système de gestion e-commerce permettant d’administrer une plateforme de vente en ligne.
+
+Un système e-commerce peut être défini comme : Une application web permettant la gestion des produits, des commandes, des utilisateurs et des transactions via Internet.
+
+Selon International Business Machines (IBM), le commerce électronique désigne l’ensemble des transactions commerciales effectuées électroniquement via des réseaux numériques, principalement Internet \cite{ref1}.
+
+Notre projet vise donc a developper une application we  permettant : 
+\begin{itemize}
+	\item La gestion des produits
+	\item La gestion des utilisateurs
+	\item La gestion du panier
+	\item Le traitement des commandes
+	\item La gestion des codes promos
+\end{itemize}
+
+\section{Contexte du projet}
+
+Le commerce électronique connaît une croissance mondiale continue. D’après Statista, le chiffre d’affaires mondial du e-commerce dépasse plusieurs milliers de milliards de dollars par an, avec une croissance soutenue.
+
+Au Maroc également, le secteur connaît une expansion importante grâce à :
+
+\begin{itemize}
+	\item La démocratisation d’Internet %l’accès à Internet est devenu largement ouvert au public
+	\item L’augmentat1ion des paiements en ligne 
+	\item L’évolution des habitudes d'achat
+\end{itemize}
+
+Cependant, de nombreuses petites structures ne disposent pas de systèmes de gestion adaptés. Certaines utilisent : %petite structures : entreprises, commerces de proximité, artisans, etc.
+%systèmes de gestion adaptés : logiciels de gestion commerciale, plateformes e-commerce clés en main, etc.
+\begin{itemize}
+	\item Des outils manuels %comme des feuilles de calcul, des carnets de commandes, etc.
+	\item Des solutions non intégrées %comme des logiciels de comptabilité séparés, des systèmes de gestion de stock indépendants, etc.
+	\item Des plateformes complexes difficiles à personnaliser %comme des solutions e-commerce préconfigurées qui ne répondent pas aux besoins spécifiques de l’entreprise.
+\end{itemize}
+
+Notre projet s'inscrit dans une demarche de conception d'un systeme e-commerce structuré, pedagogique et techniquement coherent.
+
+\section{Problématique}
+
+Le développement d’un système de gestion e-commerce implique bien plus que la simple création d’une interface de vente en ligne. Il nécessite la mise en place d’une architecture cohérente permettant de gérer efficacement les produits, les catégories, les utilisateurs et les commandes, tout en garantissant la sécurité et la fiabilité des données.
+
+De nombreuses plateformes existantes comme Shopify ou Magento proposent des solutions complètes, mais leur utilisation ne permet pas toujours de comprendre les mécanismes internes d’un système e-commerce. Dans un cadre académique, il est essentiel de concevoir et développer une solution personnalisée afin de maîtriser les concepts fondamentaux d’architecture logicielle et de gestion de base de données.
+
+Ainsi, la problématique de ce projet consiste à concevoir un système de gestion e-commerce structuré, sécurisé et maintenable, capable d’administrer efficacement les opérations commerciales tout en respectant les bonnes pratiques du développement web.
+
+\section{Objectifs du projet}
+
+Les objectifs principaux du projet sont :
+
+\begin{itemize}
+	\item Appliquer les concepts fondamentaux des applications distribuées
+	\item Développer une plateforme e-commerce fonctionnelle
+	\item Mettre en place une architecture client-serveur structurée
+	\item Assurer la gestion sécurisée des utilisateurs
+	\item Intégrer une base de données relationnelle
+\end{itemize}
+
+\section{Étude de l’existant}
+
+De nombreuses plateformes e-commerce existent aujourd’hui, allant des solutions complètes destinées aux grandes entreprises aux applications simplifiées pour les petites structures. Ces solutions offrent souvent des fonctionnalités avancées mais peuvent présenter une complexité élevée ou des contraintes techniques.
+
+Dans un cadre pédagogique, développer une application dédiée permet de mieux comprendre les mécanismes internes des systèmes distribués sans dépendre d’outils préconfigurés.
+
+\section{Solution proposée}
+
+La solution développée repose sur une architecture web moderne intégrant un backend basé sur Spring Boot et Spring MVC, une interface utilisateur dynamique avec Thymeleaf, et une base de données MySQL.
+
+L’application met en œuvre un système d’authentification sécurisé utilisant JWT, garantissant un contrôle d’accès aux différentes fonctionnalités.
+
+\section{Fonctionnalités principales}
+
+L’application propose les fonctionnalités suivantes :
+
+\begin{itemize}
+	\item Gestion des produits
+	\item Gestion des utilisateurs
+	\item Gestion du panier
+	\item Traitement des commandes
+	\item Authentification sécurisée
+	\item Consultation des données en temps réel
+\end{itemize}
+
+\section{Besoins fonctionnels}
+
+Les besoins fonctionnels identifiés sont :
+
+\begin{itemize}
+	\item Ajouter, modifier et supprimer des produits
+	\item Gérer les comptes utilisateurs
+	\item Créer et valider des commandes
+	\item Mettre à jour les informations en base de données
+	\item Sécuriser l’accès aux ressources
+\end{itemize}
+
+\section{Besoins non fonctionnels}
+
+Les exigences non fonctionnelles incluent :
+
+\begin{itemize}
+	\item Performance de l’application
+	\item Sécurité des données
+	\item Facilité d’utilisation
+	\item Maintenabilité du code
+	\item Évolutivité de l’architecture
+\end{itemize}
+
+\section{Conclusion}
+
+Ce chapitre a permis de définir le cadre général du projet et de justifier les choix effectués. Les éléments présentés constituent une base essentielle pour la compréhension des étapes de conception et d’implémentation décrites dans les chapitres suivants.
