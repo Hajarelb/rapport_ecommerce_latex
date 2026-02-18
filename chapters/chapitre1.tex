@@ -36,7 +36,7 @@ Le projet réalisé consiste en la conception et le développement d’un systè
 
 Un système e-commerce peut être défini comme : Une application web permettant la gestion des produits, des commandes, des utilisateurs et des transactions via Internet.
 
-Selon International Business Machines (IBM), le commerce électronique désigne l’ensemble des transactions commerciales effectuées électroniquement via des réseaux numériques, principalement Internet \cite{ref1}.
+Selon International Business Machines (IBM), le commerce électronique désigne l’ensemble des transactions commerciales effectuées électroniquement via des réseaux numériques, principalement Internet \cite{ecommerce}.
 
 Notre projet vise donc a developper une application we  permettant : 
 \begin{itemize}
@@ -79,15 +79,92 @@ Ainsi, la problématique de ce projet consiste à concevoir un système de gesti
 
 \section{Objectifs du projet}
 
-Les objectifs principaux du projet sont :
+L’objectif principal de ce projet est de concevoir et développer un système de gestion e-commerce permettant d’administrer efficacement une plateforme de vente en ligne. Il s’agit de mettre en place une application web structurée, sécurisée et maintenable, capable de gérer les produits, les utilisateurs et les commandes. Ce projet vise également à appliquer les concepts étudiés durant la formation, notamment la conception orientée objet, la modélisation UML, la gestion des bases de données et l’architecture des applications web modernes.
+
+\section{Exigences fonctionnelles}
+
+Les exigences fonctionnelles définissent les services et les fonctionnalités que le système doit fournir aux utilisateurs. 
+Elles décrivent précisément les tâches que l’application doit accomplir afin de répondre aux besoins identifiés.
+
+\begin{enumerate}[label=\alph*.]
+
+\item \textbf{Authentification et gestion des utilisateurs}
 
 \begin{itemize}
-	\item Appliquer les concepts fondamentaux des applications distribuées
-	\item Développer une plateforme e-commerce fonctionnelle
-	\item Mettre en place une architecture client-serveur structurée
-	\item Assurer la gestion sécurisée des utilisateurs
-	\item Intégrer une base de données relationnelle
+	\item Les utilisateurs doivent pouvoir créer un compte et s’authentifier à l’aide d’identifiants sécurisés.
+	\item Le système doit permettre la gestion des rôles (administrateur, utilisateur, etc.).
+	\item L’administrateur doit pouvoir consulter, modifier ou supprimer les comptes utilisateurs.
 \end{itemize}
+
+\item \textbf{Gestion des produits}
+
+\begin{itemize}
+	\item L’administrateur doit pouvoir ajouter un nouveau produit.
+	\item Le système doit permettre la modification et la suppression des produits existants.
+	\item Les produits doivent être affichés sous forme de liste organisée.
+\end{itemize}
+
+\item \textbf{Gestion des catégories}
+
+\begin{itemize}
+	\item L’administrateur doit pouvoir créer, modifier et supprimer des catégories.
+	\item Chaque produit doit être associé à une catégorie.
+	\item Le système doit permettre l’affichage des produits par catégorie.
+\end{itemize}
+
+\item \textbf{Gestion des commandes}
+
+\begin{itemize}
+	\item Les utilisateurs doivent pouvoir passer une commande.
+	\item Le système doit enregistrer automatiquement les informations relatives à chaque commande.
+	\item L’administrateur doit pouvoir consulter l’historique des commandes.
+\end{itemize}
+
+\item \textbf{Consultation et suivi des opérations}
+
+\begin{itemize}
+	\item Le système doit permettre l’affichage des détails d’une commande.
+	\item Les informations doivent être présentées de manière claire.
+	\item Le système doit conserver un historique des opérations.
+\end{itemize}
+
+\end{enumerate}
+
+\section{Exigences non fonctionnelles}
+
+Les exigences non fonctionnelles décrivent les qualités attendues du système. 
+Elles ne concernent pas directement les fonctionnalités, mais plutôt les critères 
+de performance, de sécurité, de fiabilité et de maintenabilité que l’application doit respecter.
+
+\vspace{0.5cm}
+
+\begin{enumerate}[label=\alph*.]
+
+\item \textbf{Sécurité}
+
+Le système doit garantir la protection des données et sécuriser l’authentification des utilisateurs.
+
+\item \textbf{Performance}
+
+L’application doit répondre rapidement aux requêtes et gérer efficacement les interactions avec la base de données.
+
+\item \textbf{Fiabilité}
+
+Les données doivent être correctement enregistrées et rester cohérentes.
+
+\item \textbf{Maintenabilité}
+
+Le code doit être structuré, organisé et documenté afin de faciliter les évolutions futures.
+
+\item \textbf{Évolutivité}
+
+L’architecture doit permettre l’ajout de nouvelles fonctionnalités sans modification majeure du système existant.
+
+\item \textbf{Utilisabilité}
+
+L’interface doit être claire, intuitive et facile à utiliser.
+
+\end{enumerate}
 
 \section{Étude de l’existant}
 
@@ -114,30 +191,9 @@ L’application propose les fonctionnalités suivantes :
 	\item Consultation des données en temps réel
 \end{itemize}
 
-\section{Besoins fonctionnels}
-
-Les besoins fonctionnels identifiés sont :
-
-\begin{itemize}
-	\item Ajouter, modifier et supprimer des produits
-	\item Gérer les comptes utilisateurs
-	\item Créer et valider des commandes
-	\item Mettre à jour les informations en base de données
-	\item Sécuriser l’accès aux ressources
-\end{itemize}
-
-\section{Besoins non fonctionnels}
-
-Les exigences non fonctionnelles incluent :
-
-\begin{itemize}
-	\item Performance de l’application
-	\item Sécurité des données
-	\item Facilité d’utilisation
-	\item Maintenabilité du code
-	\item Évolutivité de l’architecture
-\end{itemize}
 
 \section{Conclusion}
 
-Ce chapitre a permis de définir le cadre général du projet et de justifier les choix effectués. Les éléments présentés constituent une base essentielle pour la compréhension des étapes de conception et d’implémentation décrites dans les chapitres suivants.
+Ce premier chapitre a permis de présenter le cadre général du projet, son contexte, sa problématique et ses objectifs. L’étude de l’existant a montré l’importance des systèmes e-commerce modernes et a justifié le développement d’une solution personnalisée dans un cadre académique.
+
+Le chapitre suivant décrira le déroulement du projet, la planification des tâches et le processus de développement adopté.

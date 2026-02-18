@@ -28,75 +28,88 @@
 
 \section{Introduction}
 
-Ce chapitre présente la concrétisation technique de l’application e-commerce. Il décrit les technologies utilisées, l’architecture mise en place et les interfaces principales développées.
+Ce chapitre présente la phase d’implémentation du système de gestion e-commerce. Après avoir étudié les besoins et conçu l’architecture du projet, nous avons procédé au développement concret de l’application en utilisant un ensemble de technologies modernes adaptées aux applications web professionnelles.
 
-\section{Architecture de l’application}
+Nous détaillerons dans un premier temps l’environnement de développement et les outils utilisés, puis nous présenterons les différentes fonctionnalités implémentées à travers des captures d’écran commentées.
 
-L’application adopte une architecture modulaire séparant le frontend et le backend :
+\section{Environnement et outils de développement}
 
-\begin{itemize}
-	\item Backend : gestion de la logique métier, base de données et API
-	\item Frontend : interface utilisateur interactive
-\end{itemize}
+\subsection{Spring Boot}
 
-Cette séparation améliore la maintenabilité et l’évolutivité du système.
+Spring Boot est un framework open source basé sur l’écosystème Spring, destiné à simplifier le développement d’applications Java. Il permet de créer rapidement des applications autonomes, prêtes à être déployées, en réduisant la configuration manuelle.
 
-\section{Technologies utilisées}
+Il repose sur le principe de la configuration automatique (Auto-Configuration) et intègre un serveur embarqué (Tomcat par défaut), ce qui permet d’exécuter l’application sans configuration complexe.
 
-\subsection{Backend}
+Dans notre projet, Spring Boot constitue le framework principal du backend. Il assure la gestion des requêtes HTTP, l’intégration avec la base de données et la structuration du projet selon une architecture en couches \cite{springboot}.
+\subsection{Spring MVC}
 
-\begin{itemize}
-	\item Framework serveur pour la gestion des services
-	\item API REST pour la communication
-	\item Base de données relationnelle pour le stockage
-\end{itemize}
+Spring MVC (Model-View-Controller) est un module du framework Spring permettant la gestion des requêtes web selon le modèle architectural MVC.
 
-\subsection{Frontend}
+Il sépare l’application en trois composants :
 
 \begin{itemize}
-	\item Bibliothèque JavaScript moderne pour l’interface
-	\item HTML/CSS pour la présentation visuelle
+	\item Modèle (Model) : gestion des données
+	\item Vue (View) : affichage des informations
+	\item Contrôleur (Controller) : traitement des requêtes et coordination entre le modèle et la vue
 \end{itemize}
 
-\subsection{Sécurité}
+Dans notre application, Spring MVC permet de gérer les endpoints (URLs), traiter les requêtes des utilisateurs et retourner les réponses appropriées \cite{springMVC}.
+
+\subsection{Spring Data JPA}
+
+Spring Data JPA est un module facilitant l’accès aux bases de données relationnelles en utilisant le concept d’ORM (Object Relational Mapping).
+
+Il permet de manipuler les données via des interfaces Repository sans écrire manuellement les requêtes SQL complexes \cite{springdatajpa}.
+
+Dans notre projet, Spring Data JPA est utilisé pour :
 
 \begin{itemize}
-	\item Authentification utilisateur
-	\item Protection des données
+	\item L’insertion des produits
+	\item La récupération des catégories
+	\item la gestion des commandes
+	\item l'authentification des utilisateurs
 \end{itemize}
 
-\section{Fonctionnalités implémentées}
+\subsection{MySQL}
+
+MySQL est un système de gestion de base de données relationnelle (SGBDR) open source. Il permet de stocker, organiser et gérer les données de manière structurée \cite{MySQL}.
+
+Dans notre application, MySQL est utilisé pour :
 
 \begin{itemize}
-	\item Gestion des comptes utilisateurs
-	\item Gestion des produits
-	\item Gestion du stock
-	\item Création de commandes
-	\item Suivi des transactions
+	\item Stocker les informations des utilisateurs
+	\item Enregistrer les produits
+	\item Gérer les catégories
+	\item Conserver les commandes
 \end{itemize}
 
-\section{Interfaces principales}
+\subsection{Thymeleaf}
 
-Les interfaces développées privilégient :
+Thymeleaf est un moteur de templates Java utilisé pour générer des pages HTML dynamiques côté serveur.
+
+Il permet d’intégrer des données provenant du backend directement dans les pages HTML, tout en gardant un code propre et lisible \cite{Thymeleaf}.
+
+
+\subsection{Lombok}
+
+Lombok est une bibliothèque Java qui réduit le code répétitif (boilerplate code) en générant automatiquement des méthodes comme getters, setters, constructeurs, etc.
+
+Dans notre projet, Lombok simplifie la définition des entités et améliore la lisibilité du code \cite{Lombok}.
+
+\section{Architecture du projet}
+
+L’application est structurée selon une architecture en couches :
 
 \begin{itemize}
-	\item Simplicité d’utilisation
-	\item Navigation intuitive
-	\item Rapidité d’accès aux fonctionnalités
+	\item Couche Controller : gestion des requêtes HTTP
+	\item Couche Service : logique métier
+	\item Couche Repository : accès aux données
+	\item Couche Model (Entity) : représentation des tables de la base de données
 \end{itemize}
 
-Des tableaux de bord facilitent la gestion quotidienne.
-
-\section{Tests et validation}
-
-Des tests fonctionnels ont été réalisés pour garantir :
-
-\begin{itemize}
-	\item Cohérence des données
-	\item Stabilité du système
-	\item Sécurité des accès
-\end{itemize}
+Cette organisation permet une meilleure maintenabilité et séparation des responsabilités.
 
 \section{Conclusion}
 
 L’implémentation confirme la faisabilité technique du projet. Le système répond aux objectifs définis tout en restant extensible.
+

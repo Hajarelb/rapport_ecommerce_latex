@@ -52,6 +52,12 @@ INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphi
 INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
@@ -272,6 +278,8 @@ INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstop
 INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT .\main.out
 INPUT .\main.out
