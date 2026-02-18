@@ -43,23 +43,24 @@
 \contentsline {subsection}{\numberline {4.2.3}Git}{25}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}GitHub}{26}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5}Railway (Plateforme Cloud)}{26}{subsection.4.2.5}%
-\contentsline {paragraph}{Interface des projets Railway}{27}{figure.caption.20}%
+\contentsline {paragraph}{Interface des projets Railway}{26}{figure.caption.20}%
 \contentsline {paragraph}{Interface de la base de données MySQL}{27}{figure.caption.21}%
 \contentsline {paragraph}{Interface de déploiement de l’application}{28}{figure.caption.22}%
-\contentsline {section}{\numberline {4.3}Technologies Backend}{29}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Langage Java}{29}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.3}Technologies Backend}{28}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Langage Java}{28}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Spring Boot}{29}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Spring MVC}{30}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Spring Data JPA}{31}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.3}Spring MVC}{29}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Spring Data JPA}{30}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Hibernate}{31}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Apache Maven}{32}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.6}Apache Maven}{31}{subsection.4.3.6}%
 \contentsline {subsection}{\numberline {4.3.7}Project Lombok}{32}{subsection.4.3.7}%
-\contentsline {section}{\numberline {4.4}Technologies Frontend}{33}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}HTML}{33}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.4}Technologies Frontend}{32}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}HTML}{32}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}CSS}{33}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}JavaScript}{34}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Thymeleaf}{34}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Chart.js}{34}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.3}JavaScript}{33}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Bootstrap}{33}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Thymeleaf}{34}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}Chart.js}{34}{subsection.4.4.6}%
 \contentsline {section}{\numberline {4.5}Base de données}{35}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}MySQL}{35}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Configuration de la source de données}{35}{subsection.4.5.2}%
@@ -85,4 +86,4 @@
 \contentsline {subsection}{\numberline {4.8.8}Interface d'administration des commandes}{52}{subsection.4.8.8}%
 \contentsline {subsection}{\numberline {4.8.9}Interface d'administration des codes promotionnels}{53}{subsection.4.8.9}%
 \contentsline {subsection}{\numberline {4.8.10}Tableau de bord administrateur (Admin Dashboard)}{54}{subsection.4.8.10}%
-\contentsline {chapter}{Conclusion générale}{55}{chapter*.52}%
+\contentsline {chapter}{Conclusion générale}{55}{chapter*.53}%

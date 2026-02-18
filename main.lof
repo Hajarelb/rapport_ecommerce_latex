@@ -13,33 +13,34 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces logo de GitHub}}{26}{figure.caption.19}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces logo de Railway}}{26}{figure.caption.20}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Tableau de bord des projets Railway}}{27}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Interface de gestion de la base MySQL sur Railway}}{28}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Interface de gestion de la base MySQL sur Railway}}{27}{figure.caption.22}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Interface de déploiement de l’application Spring Boot sur Railway}}{28}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces logo de Java}}{29}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces logo de Java}}{28}{figure.caption.24}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces logo de Spring Boot}}{29}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces logo de Spring MVC}}{30}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces logo de Spring Data JPA}}{31}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces logo de Spring MVC}}{29}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces logo de Spring Data JPA}}{30}{figure.caption.27}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces logo de Hibernate}}{31}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces logo d'Apache Maven}}{32}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces logo d'Apache Maven}}{31}{figure.caption.29}%
 \contentsline {figure}{\numberline {4.15}{\ignorespaces logo de Project Lombok}}{32}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces logo de HTML}}{33}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces logo de HTML}}{32}{figure.caption.31}%
 \contentsline {figure}{\numberline {4.17}{\ignorespaces logo de CSS}}{33}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces logo de JavaScript}}{34}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces logo de Thymeleaf}}{34}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces logo de Chart.js}}{34}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces logo de MySQL}}{35}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces logo de Spring Security}}{37}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces logo de JWT}}{37}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Architecture globale de l’application Spring Boot}}{40}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Architecture en couches du projet dans l’IDE}}{43}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Interface d’accueil (Home)}}{44}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Interface d’inscription (Register)}}{45}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Interface d’authentification (Login)}}{46}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Interface de consultation des produits}}{47}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Interface de consultation détaillée d’un produit}}{48}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Interface du panier (Cart)}}{49}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Interface de consultation des commandes}}{50}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.33}{\ignorespaces Interface d'administration des produits}}{51}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Interface d'administration des commandes}}{52}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.35}{\ignorespaces Interface d'administration des codes promotionnels}}{53}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.36}{\ignorespaces Interface du tableau de bord administrateur}}{54}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces logo de JavaScript}}{33}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces logo de Bootstrap}}{33}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces logo de Thymeleaf}}{34}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces logo de Chart.js}}{34}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces logo de MySQL}}{35}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces logo de Spring Security}}{37}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces logo de JWT}}{37}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Architecture globale de l’application Spring Boot}}{40}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Architecture en couches du projet dans l’IDE}}{43}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Interface d’accueil (Home)}}{44}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Interface d’inscription (Register)}}{45}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Interface d’authentification (Login)}}{46}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Interface de consultation des produits}}{47}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Interface de consultation détaillée d’un produit}}{48}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Interface du panier (Cart)}}{49}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Interface de consultation des commandes}}{50}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Interface d'administration des produits}}{51}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Interface d'administration des commandes}}{52}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Interface d'administration des codes promotionnels}}{53}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.37}{\ignorespaces Interface du tableau de bord administrateur}}{54}{figure.caption.52}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  18 FEB 2026 22:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  18 FEB 2026 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -937,7 +937,7 @@ Package hyperref Info: Link coloring ON on input line 101.
 \openout4 = `main.out'.
 
  (chapters/titlepage.tex
-<figures/faculte.png, id=342, 930.47626pt x 934.24031pt>
+<figures/faculte.png, id=346, 930.47626pt x 934.24031pt>
 File: figures/faculte.png Graphic file (type png)
 <use figures/faculte.png>
 Package pdftex.def Info: figures/faculte.png  used on input line 7.
@@ -972,7 +972,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 8.
-<figures/image.png, id=344, 770.88pt x 223.58531pt>
+<figures/image.png, id=348, 770.88pt x 223.58531pt>
 File: figures/image.png Graphic file (type png)
 <use figures/image.png>
 Package pdftex.def Info: figures/image.png  used on input line 19.
@@ -1106,11 +1106,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [8] [9
 
 ]
-<figures/diagGantt.jpeg, id=619, 1090.0725pt x 963.6pt>
-File: figures/diagGantt.jpeg Graphic file (type jpg)
-<use figures/diagGantt.jpeg>
-Package pdftex.def Info: figures/diagGantt.jpeg  used on input line 50.
-(pdftex.def)             Requested size: 441.01773pt x 389.84418pt.
+<figures/gantt.png, id=626, 410.4936pt x 417.2388pt>
+File: figures/gantt.png Graphic file (type png)
+<use figures/gantt.png>
+Package pdftex.def Info: figures/gantt.png  used on input line 50.
+(pdftex.def)             Requested size: 441.01773pt x 448.2874pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1127,7 +1127,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11 <./figures/diagGantt.jpeg>]
+[11 <./figures/gantt.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1146,7 +1146,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [13] [14
 
 ]
-<figures/diag2_authentification.png, id=640, 501.875pt x 361.35pt>
+<figures/diag2_authentification.png, id=647, 501.875pt x 361.35pt>
 File: figures/diag2_authentification.png Graphic file (type png)
 <use figures/diag2_authentification.png>
 Package pdftex.def Info: figures/diag2_authentification.png  used on input line
@@ -1161,7 +1161,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]
-<figures/diag1_navigation_produits.png, id=646, 562.1pt x 411.5375pt>
+<figures/diag1_navigation_produits.png, id=653, 562.1pt x 411.5375pt>
 File: figures/diag1_navigation_produits.png Graphic file (type png)
 <use figures/diag1_navigation_produits.png>
 Package pdftex.def Info: figures/diag1_navigation_produits.png  used on input l
@@ -1177,13 +1177,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16 <./figures/diag2_authentification.png (PNG copy)> <./figures/diag1_navigati
 on_produits.png (PNG copy)>]
-<figures/diag3_panier_commandes.png, id=651, 542.025pt x 622.325pt>
+<figures/diag3_panier_commandes.png, id=658, 542.025pt x 622.325pt>
 File: figures/diag3_panier_commandes.png Graphic file (type png)
 <use figures/diag3_panier_commandes.png>
 Package pdftex.def Info: figures/diag3_panier_commandes.png  used on input line
  83.
 (pdftex.def)             Requested size: 396.91325pt x 455.72736pt.
-<figures/diag4_administration.png, id=652, 521.95pt x 582.175pt>
+<figures/diag4_administration.png, id=659, 521.95pt x 582.175pt>
 File: figures/diag4_administration.png Graphic file (type png)
 <use figures/diag4_administration.png>
 Package pdftex.def Info: figures/diag4_administration.png  used on input line 9
@@ -1198,7 +1198,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [17 <./figures/diag3_panier_commandes.png (PNG copy)>]
-<figures/diag3_classes.png, id=657, 923.45pt x 823.075pt>
+<figures/diag3_classes.png, id=664, 923.45pt x 823.075pt>
 File: figures/diag3_classes.png Graphic file (type png)
 <use figures/diag3_classes.png>
 Package pdftex.def Info: figures/diag3_classes.png  used on input line 104.
@@ -1212,7 +1212,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18 <./figures/diag4_administration.png (PNG copy)>]
-<figures/seq2_validation_jwt.png, id=662, 863.225pt x 782.925pt>
+<figures/seq2_validation_jwt.png, id=669, 863.225pt x 782.925pt>
 File: figures/seq2_validation_jwt.png Graphic file (type png)
 <use figures/seq2_validation_jwt.png>
 Package pdftex.def Info: figures/seq2_validation_jwt.png  used on input line 13
@@ -1227,7 +1227,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19 <./figures/diag3_classes.png (PNG copy)>]
-<figures/seq1_traitement_commandes.png, id=667, 883.3pt x 983.675pt>
+<figures/seq1_traitement_commandes.png, id=674, 883.3pt x 983.675pt>
 File: figures/seq1_traitement_commandes.png Graphic file (type png)
 <use figures/seq1_traitement_commandes.png>
 Package pdftex.def Info: figures/seq1_traitement_commandes.png  used on input l
@@ -1260,16 +1260,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [22] [23
 
 ]
-<figures/JDK.jpeg, id=685, 608.2725pt x 348.30125pt>
+<figures/JDK.jpeg, id=692, 608.2725pt x 348.30125pt>
 File: figures/JDK.jpeg Graphic file (type jpg)
 <use figures/JDK.jpeg>
 Package pdftex.def Info: figures/JDK.jpeg  used on input line 43.
-(pdftex.def)             Requested size: 242.5611pt x 138.89285pt.
-<figures/intellij.jpeg, id=687, 398.48875pt x 342.27875pt>
+(pdftex.def)             Requested size: 132.30666pt x 75.76022pt.
+<figures/intellij.jpeg, id=694, 398.48875pt x 342.27875pt>
 File: figures/intellij.jpeg Graphic file (type jpg)
 <use figures/intellij.jpeg>
 Package pdftex.def Info: figures/intellij.jpeg  used on input line 56.
-(pdftex.def)             Requested size: 198.45662pt x 170.45998pt.
+(pdftex.def)             Requested size: 132.30666pt x 113.64172pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1279,14 +1279,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24 <./figures/JDK.jpeg>]
-<figures/git.jpeg, id=694, 200.75pt x 200.75pt>
+<figures/git.jpeg, id=701, 200.75pt x 200.75pt>
 File: figures/git.jpeg Graphic file (type jpg)
 <use figures/git.jpeg>
 Package pdftex.def Info: figures/git.jpeg  used on input line 69.
-(pdftex.def)             Requested size: 198.45662pt x 198.47047pt.
-
-
-LaTeX Warning: Citation `git' on page 25 undefined on input line 76.
+(pdftex.def)             Requested size: 132.30666pt x 132.31467pt.
+<figures/github.jpeg, id=703, 224.84pt x 224.84pt>
+File: figures/github.jpeg Graphic file (type jpg)
+<use figures/github.jpeg>
+Package pdftex.def Info: figures/github.jpeg  used on input line 82.
+(pdftex.def)             Requested size: 132.30666pt x 132.31137pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1296,16 +1298,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [25 <./figures/intellij.jpeg> <./figures/git.jpeg>]
-<figures/github.jpeg, id=700, 224.84pt x 224.84pt>
-File: figures/github.jpeg Graphic file (type jpg)
-<use figures/github.jpeg>
-Package pdftex.def Info: figures/github.jpeg  used on input line 82.
-(pdftex.def)             Requested size: 198.45662pt x 198.46362pt.
-<figures/Railway.jpeg, id=701, 1606.0pt x 439.6425pt>
+<figures/Railway.jpeg, id=711, 1606.0pt x 439.6425pt>
 File: figures/Railway.jpeg Graphic file (type jpg)
 <use figures/Railway.jpeg>
 Package pdftex.def Info: figures/Railway.jpeg  used on input line 95.
-(pdftex.def)             Requested size: 198.45662pt x 54.32458pt.
+(pdftex.def)             Requested size: 132.30666pt x 36.21863pt.
+<figures/InterfaceRailway.jpeg, id=713, 918.43124pt x 707.64375pt>
+File: figures/InterfaceRailway.jpeg Graphic file (type jpg)
+<use figures/InterfaceRailway.jpeg>
+Package pdftex.def Info: figures/InterfaceRailway.jpeg  used on input line 115.
+
+(pdftex.def)             Requested size: 396.91325pt x 305.82497pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1315,13 +1318,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [26 <./figures/github.jpeg> <./figures/Railway.jpeg>]
-<figures/InterfaceRailway.jpeg, id=708, 918.43124pt x 707.64375pt>
-File: figures/InterfaceRailway.jpeg Graphic file (type jpg)
-<use figures/InterfaceRailway.jpeg>
-Package pdftex.def Info: figures/InterfaceRailway.jpeg  used on input line 115.
-
-(pdftex.def)             Requested size: 396.91325pt x 305.82497pt.
-<figures/InterfaceRailway2.jpeg, id=709, 1344.02126pt x 852.18375pt>
+<figures/InterfaceRailway2.jpeg, id=720, 1344.02126pt x 852.18375pt>
 File: figures/InterfaceRailway2.jpeg Graphic file (type jpg)
 <use figures/InterfaceRailway2.jpeg>
 Package pdftex.def Info: figures/InterfaceRailway2.jpeg  used on input line 126
@@ -1335,51 +1332,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27 <./figures/InterfaceRailway.jpeg>]
-<figures/InterfaceRailway3.jpeg, id=715, 1344.02126pt x 852.18375pt>
+[27 <./figures/InterfaceRailway.jpeg> <./figures/InterfaceRailway2.jpeg>]
+<figures/InterfaceRailway3.jpeg, id=726, 1344.02126pt x 852.18375pt>
 File: figures/InterfaceRailway3.jpeg Graphic file (type jpg)
 <use figures/InterfaceRailway3.jpeg>
 Package pdftex.def Info: figures/InterfaceRailway3.jpeg  used on input line 137
 .
 (pdftex.def)             Requested size: 396.91325pt x 251.66508pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[28 <./figures/InterfaceRailway2.jpeg> <./figures/InterfaceRailway3.jpeg>]
-<figures/java.jpeg, id=720, 1445.4pt x 1445.4pt>
+<figures/java.jpeg, id=727, 1445.4pt x 1445.4pt>
 File: figures/java.jpeg Graphic file (type jpg)
 <use figures/java.jpeg>
 Package pdftex.def Info: figures/java.jpeg  used on input line 152.
 (pdftex.def)             Requested size: 132.30666pt x 132.28589pt.
-<figures/springboot.jpeg, id=722, 401.5pt x 401.5pt>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28 <./figures/InterfaceRailway3.jpeg> <./figures/java.jpeg>]
+<figures/springboot.jpeg, id=733, 401.5pt x 401.5pt>
 File: figures/springboot.jpeg Graphic file (type jpg)
 <use figures/springboot.jpeg>
 Package pdftex.def Info: figures/springboot.jpeg  used on input line 167.
 (pdftex.def)             Requested size: 132.30666pt x 132.30548pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[29 <./figures/java.jpeg> <./figures/springboot.jpeg>]
-<figures/springMVC.jpeg, id=729, 1027.84pt x 496.85625pt>
+<figures/springMVC.jpeg, id=735, 1027.84pt x 496.85625pt>
 File: figures/springMVC.jpeg Graphic file (type jpg)
 <use figures/springMVC.jpeg>
 Package pdftex.def Info: figures/springMVC.jpeg  used on input line 182.
 (pdftex.def)             Requested size: 132.30666pt x 63.95674pt.
-<figures/springJPA.jpeg, id=731, 236.885pt x 242.9075pt>
-File: figures/springJPA.jpeg Graphic file (type jpg)
-<use figures/springJPA.jpeg>
-Package pdftex.def Info: figures/springJPA.jpeg  used on input line 203.
-(pdftex.def)             Requested size: 132.30666pt x 135.67514pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1388,8 +1371,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30 <./figures/springMVC.jpeg>]
-<figures/hibernate.jpeg, id=739, 301.125pt x 301.125pt>
+[29 <./figures/springboot.jpeg> <./figures/springMVC.jpeg>]
+<figures/springJPA.jpeg, id=743, 236.885pt x 242.9075pt>
+File: figures/springJPA.jpeg Graphic file (type jpg)
+<use figures/springJPA.jpeg>
+Package pdftex.def Info: figures/springJPA.jpeg  used on input line 203.
+(pdftex.def)             Requested size: 132.30666pt x 135.67514pt.
+<figures/hibernate.jpeg, id=745, 301.125pt x 301.125pt>
 File: figures/hibernate.jpeg Graphic file (type jpg)
 <use figures/hibernate.jpeg>
 Package pdftex.def Info: figures/hibernate.jpeg  used on input line 225.
@@ -1402,13 +1390,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31 <./figures/springJPA.jpeg> <./figures/hibernate.jpeg>]
-<figures/maven.jpeg, id=748, 400.49625pt x 409.53pt>
+[30 <./figures/springJPA.jpeg>]
+<figures/maven.jpeg, id=754, 400.49625pt x 409.53pt>
 File: figures/maven.jpeg Graphic file (type jpg)
 <use figures/maven.jpeg>
 Package pdftex.def Info: figures/maven.jpeg  used on input line 246.
 (pdftex.def)             Requested size: 132.30666pt x 135.28903pt.
-<figures/Lombok.jpeg, id=750, 1405.25pt x 702.625pt>
+<figures/Lombok.jpeg, id=756, 1405.25pt x 702.625pt>
 File: figures/Lombok.jpeg Graphic file (type jpg)
 <use figures/Lombok.jpeg>
 Package pdftex.def Info: figures/Lombok.jpeg  used on input line 259.
@@ -1421,22 +1409,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32 <./figures/maven.jpeg> <./figures/Lombok.jpeg>]
-<figures/html.jpeg, id=758, 266.9975pt x 288.07625pt>
+[31 <./figures/hibernate.jpeg> <./figures/maven.jpeg>]
+<figures/html.jpeg, id=764, 266.9975pt x 288.07625pt>
 File: figures/html.jpeg Graphic file (type jpg)
 <use figures/html.jpeg>
 Package pdftex.def Info: figures/html.jpeg  used on input line 278.
 (pdftex.def)             Requested size: 66.14996pt x 71.37271pt.
-<figures/css.jpeg, id=760, 1003.75pt x 1003.75pt>
+<figures/css.jpeg, id=766, 1003.75pt x 1003.75pt>
 File: figures/css.jpeg Graphic file (type jpg)
 <use figures/css.jpeg>
 Package pdftex.def Info: figures/css.jpeg  used on input line 291.
 (pdftex.def)             Requested size: 66.14996pt x 66.14967pt.
-<figures/javascript.jpeg, id=762, 1055.945pt x 1055.945pt>
-File: figures/javascript.jpeg Graphic file (type jpg)
-<use figures/javascript.jpeg>
-Package pdftex.def Info: figures/javascript.jpeg  used on input line 304.
-(pdftex.def)             Requested size: 66.14996pt x 66.1414pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1445,16 +1428,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33 <./figures/html.jpeg> <./figures/css.jpeg>]
-<figures/thymeleaf.jpeg, id=771, 225.84375pt x 225.84375pt>
+[32 <./figures/Lombok.jpeg> <./figures/html.jpeg>]
+<figures/javascript.jpeg, id=774, 1055.945pt x 1055.945pt>
+File: figures/javascript.jpeg Graphic file (type jpg)
+<use figures/javascript.jpeg>
+Package pdftex.def Info: figures/javascript.jpeg  used on input line 304.
+(pdftex.def)             Requested size: 66.14996pt x 66.1414pt.
+<figures/bootstrap.jpeg, id=776, 1027.84pt x 1027.84pt>
+File: figures/bootstrap.jpeg Graphic file (type jpg)
+<use figures/bootstrap.jpeg>
+Package pdftex.def Info: figures/bootstrap.jpeg  used on input line 322.
+(pdftex.def)             Requested size: 66.14996pt x 66.13754pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33 <./figures/css.jpeg> <./figures/javascript.jpeg> <./figures/bootstrap.jpeg>
+]
+<figures/thymeleaf.jpeg, id=785, 225.84375pt x 225.84375pt>
 File: figures/thymeleaf.jpeg Graphic file (type jpg)
 <use figures/thymeleaf.jpeg>
-Package pdftex.def Info: figures/thymeleaf.jpeg  used on input line 322.
+Package pdftex.def Info: figures/thymeleaf.jpeg  used on input line 347.
 (pdftex.def)             Requested size: 66.14996pt x 66.1512pt.
-<figures/chartJS.jpeg, id=773, 640.3925pt x 609.27625pt>
+<figures/chartJS.jpeg, id=787, 640.3925pt x 609.27625pt>
 File: figures/chartJS.jpeg Graphic file (type jpg)
 <use figures/chartJS.jpeg>
-Package pdftex.def Info: figures/chartJS.jpeg  used on input line 335.
+Package pdftex.def Info: figures/chartJS.jpeg  used on input line 360.
 (pdftex.def)             Requested size: 110.25443pt x 104.89574pt.
 
 
@@ -1464,16 +1467,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34 <./figures/javascript.jpeg> <./figures/thymeleaf.jpeg> <./figures/chartJS.j
-peg>]
-<figures/MySQL.jpeg, id=781, 497.86pt x 463.7325pt>
+[34 <./figures/thymeleaf.jpeg> <./figures/chartJS.jpeg>]
+<figures/MySQL.jpeg, id=795, 497.86pt x 463.7325pt>
 File: figures/MySQL.jpeg Graphic file (type jpg)
 <use figures/MySQL.jpeg>
-Package pdftex.def Info: figures/MySQL.jpeg  used on input line 358.
+Package pdftex.def Info: figures/MySQL.jpeg  used on input line 383.
 (pdftex.def)             Requested size: 88.2022pt x 82.15211pt.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-76.
- (C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+01.
+
+(C:\Users\elbac\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
@@ -1492,15 +1495,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [36]
-<figures/springSecurity.jpeg, id=794, 401.5pt x 401.5pt>
+<figures/springSecurity.jpeg, id=808, 401.5pt x 401.5pt>
 File: figures/springSecurity.jpeg Graphic file (type jpg)
 <use figures/springSecurity.jpeg>
-Package pdftex.def Info: figures/springSecurity.jpeg  used on input line 425.
+Package pdftex.def Info: figures/springSecurity.jpeg  used on input line 450.
 (pdftex.def)             Requested size: 132.30666pt x 132.30548pt.
-<figures/jwt.jpeg, id=796, 1606.0pt x 772.8875pt>
+<figures/jwt.jpeg, id=810, 1606.0pt x 772.8875pt>
 File: figures/jwt.jpeg Graphic file (type jpg)
 <use figures/jwt.jpeg>
-Package pdftex.def Info: figures/jwt.jpeg  used on input line 451.
+Package pdftex.def Info: figures/jwt.jpeg  used on input line 476.
 (pdftex.def)             Requested size: 132.30666pt x 63.67201pt.
 
 
@@ -1519,11 +1522,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [38]
-<figures/ArchitectureLogicielle.png, id=812, 659.46375pt x 316.93407pt>
+<figures/ArchitectureLogicielle.png, id=826, 659.46375pt x 316.93407pt>
 File: figures/ArchitectureLogicielle.png Graphic file (type png)
 <use figures/ArchitectureLogicielle.png>
 Package pdftex.def Info: figures/ArchitectureLogicielle.png  used on input line
- 535.
+ 560.
 (pdftex.def)             Requested size: 418.96548pt x 201.35728pt.
 
 
@@ -1550,16 +1553,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [41]
-<figures/structure1.png, id=827, 235.63031pt x 429.85594pt>
+<figures/structure1.png, id=841, 235.63031pt x 429.85594pt>
 File: figures/structure1.png Graphic file (type png)
 <use figures/structure1.png>
-Package pdftex.def Info: figures/structure1.png  used on input line 639.
+Package pdftex.def Info: figures/structure1.png  used on input line 664.
 (pdftex.def)             Requested size: 211.68661pt x 386.17807pt.
-<figures/structure2.png, id=828, 228.855pt x 374.90062pt>
+<figures/structure2.png, id=842, 275.52937pt x 429.10312pt>
 File: figures/structure2.png Graphic file (type png)
 <use figures/structure2.png>
-Package pdftex.def Info: figures/structure2.png  used on input line 644.
-(pdftex.def)             Requested size: 211.68661pt x 346.78908pt.
+Package pdftex.def Info: figures/structure2.png  used on input line 669.
+(pdftex.def)             Requested size: 211.68661pt x 329.69019pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1569,10 +1572,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [42]
-<figures/Home.jpeg, id=833, 1606.0pt x 875.27pt>
+<figures/Home.jpeg, id=847, 1606.0pt x 875.27pt>
 File: figures/Home.jpeg Graphic file (type jpg)
 <use figures/Home.jpeg>
-Package pdftex.def Info: figures/Home.jpeg  used on input line 672.
+Package pdftex.def Info: figures/Home.jpeg  used on input line 697.
 (pdftex.def)             Requested size: 374.86775pt x 204.2995pt.
 
 
@@ -1583,10 +1586,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [43 <./figures/structure1.png> <./figures/structure2.png>]
-<figures/Register.jpeg, id=840, 1123.19624pt x 663.98062pt>
+<figures/Register.jpeg, id=854, 1123.19624pt x 663.98062pt>
 File: figures/Register.jpeg Graphic file (type jpg)
 <use figures/Register.jpeg>
-Package pdftex.def Info: figures/Register.jpeg  used on input line 690.
+Package pdftex.def Info: figures/Register.jpeg  used on input line 715.
 (pdftex.def)             Requested size: 374.86775pt x 221.5965pt.
 
 
@@ -1597,10 +1600,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [44 <./figures/Home.jpeg>]
-<figures/Login.jpeg, id=845, 1120.9378pt x 642.90187pt>
+<figures/Login.jpeg, id=859, 1120.9378pt x 642.90187pt>
 File: figures/Login.jpeg Graphic file (type jpg)
 <use figures/Login.jpeg>
-Package pdftex.def Info: figures/Login.jpeg  used on input line 706.
+Package pdftex.def Info: figures/Login.jpeg  used on input line 731.
 (pdftex.def)             Requested size: 374.86775pt x 215.00313pt.
 
 
@@ -1611,10 +1614,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [45 <./figures/Register.jpeg>]
-<figures/Produits.jpeg, id=851, 1117.17375pt x 653.44125pt>
+<figures/Produits.jpeg, id=865, 1117.17375pt x 653.44125pt>
 File: figures/Produits.jpeg Graphic file (type jpg)
 <use figures/Produits.jpeg>
-Package pdftex.def Info: figures/Produits.jpeg  used on input line 721.
+Package pdftex.def Info: figures/Produits.jpeg  used on input line 746.
 (pdftex.def)             Requested size: 374.86775pt x 219.25563pt.
 
 
@@ -1625,10 +1628,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [46 <./figures/Login.jpeg>]
-<figures/Produit.jpeg, id=856, 1111.15125pt x 662.475pt>
+<figures/Produit.jpeg, id=870, 1111.15125pt x 662.475pt>
 File: figures/Produit.jpeg Graphic file (type jpg)
 <use figures/Produit.jpeg>
-Package pdftex.def Info: figures/Produit.jpeg  used on input line 745.
+Package pdftex.def Info: figures/Produit.jpeg  used on input line 770.
 (pdftex.def)             Requested size: 374.86775pt x 223.49985pt.
 
 
@@ -1639,10 +1642,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [47 <./figures/Produits.jpeg>]
-<figures/Panier.jpeg, id=861, 1122.44344pt x 630.85687pt>
+<figures/Panier.jpeg, id=875, 1122.44344pt x 630.85687pt>
 File: figures/Panier.jpeg Graphic file (type jpg)
 <use figures/Panier.jpeg>
-Package pdftex.def Info: figures/Panier.jpeg  used on input line 770.
+Package pdftex.def Info: figures/Panier.jpeg  used on input line 795.
 (pdftex.def)             Requested size: 374.86775pt x 210.68619pt.
 
 
@@ -1653,10 +1656,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [48 <./figures/Produit.jpeg>]
-<figures/Commandes.jpeg, id=866, 1125.45468pt x 636.87938pt>
+<figures/Commandes.jpeg, id=880, 1125.45468pt x 636.87938pt>
 File: figures/Commandes.jpeg Graphic file (type jpg)
 <use figures/Commandes.jpeg>
-Package pdftex.def Info: figures/Commandes.jpeg  used on input line 787.
+Package pdftex.def Info: figures/Commandes.jpeg  used on input line 812.
 (pdftex.def)             Requested size: 374.86775pt x 212.13387pt.
 
 
@@ -1667,15 +1670,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [49 <./figures/Panier.jpeg>]
-<figures/GestionProduit.jpeg, id=871, 1121.69063pt x 648.17157pt>
+<figures/GestionProduit.jpeg, id=885, 1121.69063pt x 648.17157pt>
 File: figures/GestionProduit.jpeg Graphic file (type jpg)
 <use figures/GestionProduit.jpeg>
-Package pdftex.def Info: figures/GestionProduit.jpeg  used on input line 807.
+Package pdftex.def Info: figures/GestionProduit.jpeg  used on input line 832.
 (pdftex.def)             Requested size: 211.68661pt x 122.32309pt.
-<figures/AjoutProduit.jpeg, id=872, 1111.15125pt x 676.77844pt>
+<figures/AjoutProduit.jpeg, id=886, 1111.15125pt x 676.77844pt>
 File: figures/AjoutProduit.jpeg Graphic file (type jpg)
 <use figures/AjoutProduit.jpeg>
-Package pdftex.def Info: figures/AjoutProduit.jpeg  used on input line 812.
+Package pdftex.def Info: figures/AjoutProduit.jpeg  used on input line 837.
 (pdftex.def)             Requested size: 211.68661pt x 128.93002pt.
 
 
@@ -1686,10 +1689,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [50 <./figures/Commandes.jpeg>]
-<figures/GestionCommande.jpeg, id=877, 1125.45468pt x 662.475pt>
+<figures/GestionCommande.jpeg, id=891, 1125.45468pt x 662.475pt>
 File: figures/GestionCommande.jpeg Graphic file (type jpg)
 <use figures/GestionCommande.jpeg>
-Package pdftex.def Info: figures/GestionCommande.jpeg  used on input line 831.
+Package pdftex.def Info: figures/GestionCommande.jpeg  used on input line 856.
 (pdftex.def)             Requested size: 374.86775pt x 220.65935pt.
 
 
@@ -1700,21 +1703,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [51 <./figures/GestionProduit.jpeg> <./figures/AjoutProduit.jpeg>]
-Overfull \hbox (3.06195pt too wide) in paragraph at lines 844--845
+Overfull \hbox (3.06195pt too wide) in paragraph at lines 869--870
 []\T1/lmr/m/n/12 Ainsi, la ges-tion des com-mandes consti-tue un élé-ment cen-t
 ral du sys-tème e-commerce,
  []
 
-<figures/CodePromoCreation.jpeg, id=883, 1122.44344pt x 648.17157pt>
+<figures/CodePromoCreation.jpeg, id=897, 1122.44344pt x 648.17157pt>
 File: figures/CodePromoCreation.jpeg Graphic file (type jpg)
 <use figures/CodePromoCreation.jpeg>
-Package pdftex.def Info: figures/CodePromoCreation.jpeg  used on input line 853
+Package pdftex.def Info: figures/CodePromoCreation.jpeg  used on input line 878
 .
 (pdftex.def)             Requested size: 211.68661pt x 122.23407pt.
-<figures/CodePromoGestion.jpeg, id=884, 1121.69063pt x 651.93562pt>
+<figures/CodePromoGestion.jpeg, id=898, 1121.69063pt x 651.93562pt>
 File: figures/CodePromoGestion.jpeg Graphic file (type jpg)
 <use figures/CodePromoGestion.jpeg>
-Package pdftex.def Info: figures/CodePromoGestion.jpeg  used on input line 858.
+Package pdftex.def Info: figures/CodePromoGestion.jpeg  used on input line 883.
 
 (pdftex.def)             Requested size: 211.68661pt x 123.03343pt.
 
@@ -1725,10 +1728,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [52 <./figures/GestionCommande.jpeg>]
-<figures/AdminDashboard.jpeg, id=889, 1114.91531pt x 655.69969pt>
+<figures/AdminDashboard.jpeg, id=903, 1114.91531pt x 655.69969pt>
 File: figures/AdminDashboard.jpeg Graphic file (type jpg)
 <use figures/AdminDashboard.jpeg>
-Package pdftex.def Info: figures/AdminDashboard.jpeg  used on input line 879.
+Package pdftex.def Info: figures/AdminDashboard.jpeg  used on input line 904.
 (pdftex.def)             Requested size: 374.86775pt x 220.46367pt.
 
 
@@ -1765,95 +1768,110 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--23
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
 [56
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
 
-Overfull \hbox (9.2676pt too wide) in paragraph at lines 86--88
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
+
+ []
+
+
+Overfull \hbox (9.2676pt too wide) in paragraph at lines 97--99
 \T1/lmr/m/n/12 https://docs.spring.io/spring-security/reference/features/authen
 tication/password-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
@@ -1870,18 +1888,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 95E481C07690B03C6B1B31DB234F603C;14458.
+(rerunfilecheck)             Checksum: B422B7E51A8CF81B2FE42FEAFA816487;14565.
  ) 
 Here is how much of TeX's memory you used:
- 29142 strings out of 467865
- 573170 string characters out of 5418304
- 964162 words of memory out of 5000000
- 57324 multiletter control sequences out of 15000+600000
+ 29159 strings out of 467865
+ 573465 string characters out of 5418304
+ 964301 words of memory out of 5000000
+ 57336 multiletter control sequences out of 15000+600000
  670531 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,12n,108p,760b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1891,9 +1905,9 @@ b><C:/Users/elbac/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
 ><C:/Users/elbac/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
 <C:/Users/elbac/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
 
-Output written on main.pdf (67 pages, 5028489 bytes).
+Output written on main.pdf (67 pages, 4946369 bytes).
 PDF statistics:
- 992 PDF objects out of 1000 (max. 8388607)
- 234 named destinations out of 1000 (max. 500000)
- 930 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1007 PDF objects out of 1200 (max. 8388607)
+ 239 named destinations out of 1000 (max. 500000)
+ 943 words of extra memory for PDF output out of 10000 (max. 10000000)
 
