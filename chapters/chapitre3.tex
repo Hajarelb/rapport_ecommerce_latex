@@ -27,62 +27,126 @@
 
 \section{Introduction}
 
-Après l’analyse des besoins et la définition du cadre du projet, cette étape vise à formaliser les spécifications fonctionnelles et techniques de l’application. La modélisation permet de traduire les exigences en représentations structurées afin de faciliter la conception et le développement.
+Après l’analyse des besoins fonctionnels et non fonctionnels présentée dans le chapitre précédent, il est nécessaire de formaliser ces exigences à travers une étape de spécification et de modélisation.  
 
-Dans le cadre de notre application e-commerce de gestion commerciale, cette modélisation décrit les acteurs impliqués, les interactions avec le système, ainsi que l’organisation des données.
+La modélisation constitue une phase essentielle du cycle de développement logiciel. Elle permet de représenter le système sous forme de modèles abstraits facilitant la compréhension, la communication entre les parties prenantes et la préparation de l’implémentation.
 
 \section{Identification des acteurs}
 
-L’application repose sur plusieurs profils utilisateurs disposant de droits spécifiques :
+En ingénierie logicielle, un acteur est défini comme une entité externe interagissant avec le système afin d’atteindre un objectif spécifique .  
+Un acteur peut être une personne, un système externe ou une organisation.
+
+Dans notre application e-commerce, les acteurs identifiés sont :
 
 \begin{itemize}
-	\item \textbf{Administrateur} : gère les utilisateurs, les produits, les commandes et supervise l’ensemble du système.
-	\item \textbf{Gestionnaire} : responsable des ventes, du stock et des commandes.
-	\item \textbf{Client} : consulte les produits, passe des commandes et suit ses achats.
+    \item \textbf{Administrateur} : responsable de la gestion globale du système (utilisateurs, produits, commandes, configurations).
+    \item \textbf{Gestionnaire} : supervise les ventes, le stock et le traitement des commandes.
+    \item \textbf{Client} : consulte le catalogue, gère son panier et effectue des commandes.
 \end{itemize}
 
-Cette séparation garantit une gestion sécurisée et adaptée aux responsabilités de chaque utilisateur.
+Cette séparation garantit une gestion sécurisée et conforme aux responsabilités de chaque profil utilisateur.
 
 \section{Diagrammes de cas d’utilisation}
 
-Les diagrammes de cas d’utilisation illustrent les interactions entre les acteurs et le système :
+Le diagramme de cas d’utilisation est un diagramme UML permettant de représenter les interactions entre les acteurs et le système.  
 
-\begin{itemize}
-	\item Authentification et gestion des comptes
-	\item Gestion des produits
-	\item Gestion du stock
-	\item Gestion des commandes
-	\item Consultation de l’historique
-\end{itemize}
+Selon l’OMG, il décrit les fonctionnalités offertes par le système et les relations entre ces fonctionnalités et les acteurs .
 
-Ces diagrammes permettent de visualiser les fonctionnalités accessibles selon chaque profil utilisateur.
+Ces diagrammes permettent de clarifier les exigences fonctionnelles du système.
+
+
+\subsection{Authentification}
+La figure suivante présente le cas d'utilisation pour l'authentification. Tous les acteurs doivent s'authentifier pour accéder à leurs fonctionnalités respectives.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/diag2_authentification.png}
+    \caption{Diagramme de cas d'utilisation : Authentification}
+    \label{fig:usecase_auth}
+\end{figure}
+
+\subsection{Navigation et Produits}
+Ce diagramme détaille les actions liées à la navigation dans le catalogue et la consultation des produits, principalement effectuées par le client.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/diag1_navigation_produits.png}
+    \caption{Diagramme de cas d'utilisation : Navigation et Produits}
+    \label{fig:usecase_produits}
+\end{figure}
+
+\subsection{Panier et Commandes}
+La gestion du panier et le processus de commande sont au cœur de l'expérience client. Ce diagramme illustre les étapes de la sélection des articles jusqu'à la validation de la commande.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/diag3_panier_commandes.png}
+    \caption{Diagramme de cas d'utilisation : Panier et Commandes}
+    \label{fig:usecase_panier}
+\end{figure}
+
+\subsection{Administration}
+L'administration du système couvre la gestion globale, incluant la gestion des utilisateurs, des produits et des configurations système.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/diag4_administration.png}
+    \caption{Diagramme de cas d'utilisation : Administration}
+    \label{fig:usecase_admin}
+\end{figure}
 
 \section{Modélisation des données}
 
-Le diagramme de classes définit les principales entités :
+Le diagramme de classes suivant définit la structure statique de notre système, montrant les entités principales (Utilisateur, Produit, Commande, etc.) et leurs relations. Il sert de base pour la création de la base de données.
 
-\begin{itemize}
-	\item Utilisateur
-	\item Produit
-	\item Commande
-	\item Client
-	\item Paiement
-\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/diag3_classes.png}
+    \caption{Diagramme de classes}
+    \label{fig:class_diagram}
+\end{figure}
 
 Chaque entité contient des attributs spécifiques permettant une gestion cohérente des informations commerciales.
 
 \section{Diagrammes de séquence}
 
-Les diagrammes de séquence décrivent le déroulement des interactions pour des scénarios clés :
+Le diagramme de séquence est un diagramme comportemental UML représentant les interactions entre objets dans un ordre chronologique.  
 
+Il met en évidence :
 \begin{itemize}
-	\item Connexion utilisateur
-	\item Passage de commande
-	\item Mise à jour du stock
+    \item Les objets impliqués
+    \item Les messages échangés
+    \item L’ordre temporel des interactions
 \end{itemize}
 
-Ils illustrent la communication entre les composants du système.
+Ces diagrammes permettent de comprendre le déroulement dynamique des scénarios critiques du système.
+
+
+\subsection{Validation JWT}
+Ce diagramme illustre le processus de sécurisation des échanges via la validation des jetons JWT (JSON Web Token) lors des requêtes API.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/seq2_validation_jwt.png}
+    \caption{Diagramme de séquence : Validation JWT}
+    \label{fig:seq_jwt}
+\end{figure}
+
+\subsection{Traitement des commandes}
+Le diagramme ci-dessous détaille le flux de traitement d'une commande, de sa validation par le client jusqu'à son enregistrement et la mise à jour du stock.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/seq1_traitement_commandes.png}
+    \caption{Diagramme de séquence : Traitement des commandes}
+    \label{fig:seq_commande}
+\end{figure}
 
 \section{Conclusion}
 
-La modélisation fournit une vision claire de l’architecture fonctionnelle du système. Elle constitue une base solide pour l’implémentation en assurant cohérence, organisation et évolutivité.
+Ce chapitre a permis de formaliser les exigences du système à travers une modélisation structurée basée sur le langage UML.  
+
+L’identification des acteurs, la définition des cas d’utilisation, la modélisation des données ainsi que l’analyse des scénarios dynamiques offrent une vision claire et cohérente du fonctionnement de l’application.
+
+Ces modèles constituent une base essentielle pour la phase d’implémentation présentée dans le chapitre suivant.  
+Ils garantissent une meilleure organisation du développement, une cohérence architecturale et une évolutivité maîtrisée du système.

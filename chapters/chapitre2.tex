@@ -15,7 +15,7 @@
 	\rule{10cm}{1.2pt}
 	
 	\vspace{0.8cm}
-	{\LARGE Déroulement du proje}
+	{\LARGE Déroulement du projet}
 	
 	\vspace{0.8cm}
 	\rule{10cm}{1.2pt}
@@ -31,77 +31,106 @@ Ce chapitre présente le déroulement du projet depuis sa planification initiale
 
 \section{Planification opérationnelle}
 
-Afin de garantir une réalisation efficace du projet, une planification opérationnelle a été mise en place dès le début du développement. Le travail a été découpé en tâches principales correspondant aux différentes fonctionnalités de l’application ainsi qu’aux aspects techniques liés à l’architecture distribuée.
+Afin d’assurer une gestion rigoureuse du projet, une planification détaillée a été réalisée sous forme de diagramme de Gantt.  
 
-Chaque tâche a été organisée selon son niveau de priorité, sa dépendance vis-à-vis des autres composants et sa complexité. Cette organisation a permis de suivre une progression cohérente tout en facilitant la validation intermédiaire des fonctionnalités développées.
-
-\subsection{Tableau des tâches}
-
-Le tableau suivant présente une vue synthétique des principales tâches du projet, leur description et leur objectif.
-
-\vspace{0.5cm}
-
-\textbf{(Espace réservé pour le tableau des tâches ou diagramme de Gantt — à compléter ultérieurement)}
-
-\vspace{1cm}
-
-\section{Processus de développement}
-
-\subsection{Cycle de vie du développement}
-
-Le développement de l’application a suivi une approche itérative et incrémentale. Chaque phase du projet a été réalisée progressivement, permettant de valider les fonctionnalités au fur et à mesure de leur implémentation.
-
-Cette méthode favorise une meilleure compréhension des interactions entre les différentes couches de l’application, tout en réduisant les risques d’erreurs majeures lors de l’intégration finale.
-
-Le choix de cette approche s’explique par :
-
+Ce diagramme permet de visualiser :
 \begin{itemize}
-	\item la modularité de l’architecture de l’application,
-	\item la possibilité de tester chaque composant indépendamment,
-	\item la facilité d’intégration progressive des fonctionnalités.
+    \item Les différentes phases du projet
+    \item La durée de chaque tâche
+    \item L’enchaînement chronologique des activités
+    \item La répartition des responsabilités entre les membres de l’équipe
 \end{itemize}
 
-\subsection{Phases du développement}
+Le projet s’est déroulé sur une période de sept semaines (Janvier – Février 2026), selon une organisation progressive et structurée.
 
-Le processus de développement a été structuré en plusieurs phases successives :
+\subsection{Diagramme de Gantt}
 
-\textbf{Phase 1 : Analyse des besoins}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/diagGantt.jpeg}
+    \caption{Diagramme de Gantt du projet E-Commerce}
+    \label{fig:gantt}
+\end{figure}
 
-Cette phase a consisté à identifier les fonctionnalités essentielles d’une application e-commerce distribuée. Les besoins fonctionnels et non fonctionnels ont été définis afin d’établir une base claire pour le développement.
+\section{Phases du développement}
 
-\textbf{Phase 2 : Conception de l’architecture}
+Le projet a été structuré en six phases principales, conformément au diagramme de Gantt présenté précédemment.
 
-Une architecture client-serveur a été conçue en séparant la couche présentation, la logique métier et la gestion des données. La sécurité de l’application a été intégrée dès cette étape.
+\subsection*{Phase 1 : Analyse et Spécification}
 
-\textbf{Phase 3 : Mise en place de l’environnement}
-
-Les outils de développement ont été configurés, incluant le framework Spring Boot, la base de données MySQL et l’environnement de test. Cette étape a permis de préparer une base stable pour le codage.
-
-\textbf{Phase 4 : Développement des fonctionnalités}
-
-Les modules principaux ont été implémentés progressivement :
-
+Cette phase initiale a été consacrée à :
 \begin{itemize}
-	\item gestion des produits,
-	\item gestion des utilisateurs,
-	\item panier et commandes,
-	\item authentification sécurisée.
+    \item L’analyse des besoins fonctionnels
+    \item L’étude de l’existant
+    \item La rédaction des spécifications
 \end{itemize}
 
-Chaque fonctionnalité a été testée avant son intégration avec le reste du système.
+Elle a permis d’établir une base claire pour la conception du système.
 
-\textbf{Phase 5 : Intégration de la sécurité}
+\subsection*{Phase 2 : Conception et Modélisation}
 
-Un mécanisme d’authentification basé sur JWT a été mis en place afin de contrôler l’accès aux différentes ressources et garantir la protection des données.
+Durant cette phase, les éléments suivants ont été réalisés :
+\begin{itemize}
+    \item Diagrammes de cas d’utilisation
+    \item Diagramme de classes
+    \item Diagrammes de séquence
+    \item Définition de l’architecture applicative
+\end{itemize}
 
-\textbf{Phase 6 : Tests et validation}
+Cette étape a permis de structurer le système avant son implémentation.
 
-Des tests fonctionnels ont été réalisés pour vérifier le bon fonctionnement de l’application, la cohérence des données et la stabilité globale du système.
+\subsection*{Phase 3 : Mise en place de l’environnement}
 
-\textbf{Phase 7 : Documentation}
+Cette phase a consisté à :
+\begin{itemize}
+    \item Configurer Spring Boot et MySQL
+    \item Mettre en place la configuration de sécurité JWT
+    \item Préparer l’environnement de développement
+\end{itemize}
 
-La dernière étape a consisté à rédiger le rapport du projet afin de documenter les choix techniques, la méthodologie adoptée et les résultats obtenus.
+Elle a assuré une base technique stable pour le développement.
+
+\subsection*{Phase 4 : Développement}
+
+Le développement a été organisé en modules :
+
+\begin{itemize}
+    \item Module d’authentification (JWT)
+    \item Module de gestion des produits
+    \item Module panier et commandes
+    \item Module administration et tableau de bord
+    \item Gestion des codes promotionnels
+    \item Interface frontend avec Thymeleaf
+\end{itemize}
+
+Chaque module a été développé et testé progressivement.
+
+\subsection*{Phase 5 : Tests et Validation}
+
+Cette phase a inclus :
+\begin{itemize}
+    \item Tests fonctionnels
+    \item Correction des anomalies détectées
+\end{itemize}
+
+Elle a permis d’assurer la stabilité et la fiabilité de l’application.
+
+\subsection*{Phase 6 : Documentation et Rapport}
+
+La dernière phase a été consacrée à :
+\begin{itemize}
+    \item La rédaction du rapport final
+    \item La mise en forme et validation du document
+\end{itemize}
+
+Cette étape clôture officiellement le projet.
 
 \section{Conclusion}
 
-Ce chapitre a présenté l’organisation et la méthodologie suivies pour mener à bien le projet. La planification structurée et l’approche incrémentale ont permis de garantir une progression cohérente et une intégration efficace des fonctionnalités. Ces éléments constituent une base solide pour aborder les aspects de conception et de modélisation présentés dans le chapitre suivant.
+Ce chapitre a présenté le déroulement méthodologique du projet à travers une planification structurée et une organisation progressive des tâches.
+
+Le diagramme de Gantt met en évidence une gestion rigoureuse du temps et une répartition claire des responsabilités.  
+
+L’approche incrémentale adoptée a permis de développer, tester et intégrer les différentes fonctionnalités de manière maîtrisée, tout en garantissant la cohérence architecturale du système.
+
+Cette organisation méthodique constitue une base solide pour la phase de spécification et de modélisation détaillée dans le chapitre suivant.

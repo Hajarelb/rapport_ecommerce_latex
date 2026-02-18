@@ -32,16 +32,157 @@ Ce chapitre présente la phase d’implémentation du système de gestion e-comm
 
 Nous détaillerons dans un premier temps l’environnement de développement et les outils utilisés, puis nous présenterons les différentes fonctionnalités implémentées à travers des captures d’écran commentées.
 
-\section{Environnement et outils de développement}
+\section{Environnement logiciel}
+
+L’environnement logiciel constitue la base technique sur laquelle repose le développement de l’application e-commerce. Il regroupe l’ensemble des outils, plateformes et technologies ayant permis la conception, le développement, les tests ainsi que le déploiement du système.
+
+\subsection{Java Development Kit (JDK)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.55\textwidth]{figures/JDK.jpeg}
+    \caption{logo de Java Development Kit (JDK)}
+    \label{fig:jdk_logo}
+\end{figure}
+
+Le Java Development Kit (JDK) est un ensemble d’outils permettant le développement d’applications en langage Java. Il comprend le compilateur Java (javac), la machine virtuelle Java (JVM) ainsi que les bibliothèques standards nécessaires à l’exécution des programmes.
+
+Dans ce projet, le JDK a été utilisé pour compiler et exécuter l’application Spring Boot. Le langage Java constitue le socle du développement backend, offrant robustesse, portabilité et sécurité \cite{jdk}.
+
+\subsection{IntelliJ IDEA}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/intellij.jpeg}
+    \caption{logo d'IntelliJ IDEA}
+    \label{fig:intellij_logo}
+\end{figure}
+
+IntelliJ IDEA est un environnement de développement intégré (IDE) conçu principalement pour le développement Java. Il offre des fonctionnalités avancées telles que l’autocomplétion intelligente, la détection d’erreurs en temps réel, le débogage interactif ainsi que l’intégration avec les outils de gestion de projet comme Maven et Git.
+
+Dans le cadre de ce projet, IntelliJ IDEA a été utilisé pour structurer le code selon l’architecture en couches, gérer les dépendances Maven et faciliter les phases de test et de correction \cite{intellij}.
+
+\subsection{Git}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/git.jpeg}
+    \caption{logo de Git}
+    \label{fig:git_logo}
+\end{figure}
+
+Git est un système de gestion de version distribué permettant de suivre les modifications du code source, gérer différentes branches de développement et collaborer efficacement sur un projet logiciel.
+
+Il a été utilisé pour versionner le code et assurer la traçabilité des modifications effectuées tout au long du développement \cite{git}.
+
+\subsection{GitHub}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/github.jpeg}
+    \caption{logo de GitHub}
+    \label{fig:github_logo}
+\end{figure}
+
+GitHub est une plateforme d’hébergement de code basée sur Git. Elle permet le stockage distant du projet, la gestion des versions ainsi que la collaboration entre développeurs.
+
+Dans ce projet, GitHub a servi de dépôt centralisé pour le code source et a facilité le déploiement continu vers la plateforme cloud.
+
+\subsection{Railway (Plateforme Cloud)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/Railway.jpeg}
+    \caption{logo de Railway}
+    \label{fig:railway_logo}
+\end{figure}
+
+Railway est une plateforme cloud de type Platform as a Service (PaaS) permettant de déployer rapidement des applications web sans configuration complexe d’infrastructure \cite{railway}.
+
+Dans ce projet, Railway a été utilisé pour :
+\begin{itemize}
+    \item Déployer l’application Spring Boot
+    \item Héberger la base de données distante
+    \item Gérer les variables d’environnement
+\end{itemize}
+
+\paragraph{Interface des projets Railway}
+
+La figure suivante montre le tableau de bord principal de Railway. Cette interface permet de visualiser les différents projets déployés (application Spring Boot et base de données MySQL), ainsi que leur état (online, production, etc.).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/InterfaceRailway.jpeg}
+    \caption{Tableau de bord des projets Railway}
+    \label{fig:railway_projects}
+\end{figure}
+
+\paragraph{Interface de la base de données MySQL}
+
+Railway permet l’hébergement d’une base de données MySQL managée. La figure suivante montre l’interface de gestion de la base de données, incluant les tables. % (users, product, order, cart, promo_code, etc.).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/InterfaceRailway2.jpeg}
+    \caption{Interface de gestion de la base MySQL sur Railway}
+    \label{fig:railway_mysql}
+\end{figure}
+
+\paragraph{Interface de déploiement de l’application}
+
+La figure suivante illustre l’interface de déploiement de l’application Spring Boot connectée au dépôt GitHub. Chaque mise à jour du code déclenche automatiquement un nouveau déploiement (CI/CD).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/InterfaceRailway3.jpeg}
+    \caption{Interface de déploiement de l’application Spring Boot sur Railway}
+    \label{fig:railway_deploy}
+\end{figure}
+
+\section{Technologies Backend}
+
+Le backend représente la partie serveur de l’application. Il assure le traitement des requêtes, l’implémentation de la logique métier, la gestion des accès aux données ainsi que la sécurisation des ressources.
+
+Dans ce projet, le backend a été développé en Java en s’appuyant principalement sur l’écosystème Spring.
+
+\subsection{Langage Java}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.30\textwidth]{figures/java.jpeg}
+    \caption{logo de Java}
+    \label{fig:java_logo}
+\end{figure}
+Java est un langage de programmation orienté objet, robuste et portable grâce au principe « Write Once, Run Anywhere » rendu possible par la machine virtuelle Java (JVM).
+
+Il est particulièrement adapté au développement d’applications web d’entreprise en raison de sa stabilité, de sa gestion avancée de la mémoire et de son vaste écosystème de bibliothèques.
+
+Dans ce projet, Java constitue le langage principal pour l’implémentation des contrôleurs, services, entités et configurations de sécurité \cite{java}.
+
 
 \subsection{Spring Boot}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.30\textwidth]{figures/springboot.jpeg}
+    \caption{logo de Spring Boot}
+    \label{fig:springboot_logo}
+\end{figure}
 
 Spring Boot est un framework open source basé sur l’écosystème Spring, destiné à simplifier le développement d’applications Java. Il permet de créer rapidement des applications autonomes, prêtes à être déployées, en réduisant la configuration manuelle.
 
 Il repose sur le principe de la configuration automatique (Auto-Configuration) et intègre un serveur embarqué (Tomcat par défaut), ce qui permet d’exécuter l’application sans configuration complexe.
 
 Dans notre projet, Spring Boot constitue le framework principal du backend. Il assure la gestion des requêtes HTTP, l’intégration avec la base de données et la structuration du projet selon une architecture en couches \cite{springboot}.
+
 \subsection{Spring MVC}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.30\textwidth]{figures/springMVC.jpeg}
+    \caption{logo de Spring MVC}
+    \label{fig:springMVC_logo}
+\end{figure}
 
 Spring MVC (Model-View-Controller) est un module du framework Spring permettant la gestion des requêtes web selon le modèle architectural MVC.
 
@@ -57,6 +198,13 @@ Dans notre application, Spring MVC permet de gérer les endpoints (URLs), traite
 
 \subsection{Spring Data JPA}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.30\textwidth]{figures/springJPA.jpeg}
+    \caption{logo de Spring Data JPA}
+    \label{fig:springJPA_logo}
+\end{figure}
+
 Spring Data JPA est un module facilitant l’accès aux bases de données relationnelles en utilisant le concept d’ORM (Object Relational Mapping).
 
 Il permet de manipuler les données via des interfaces Repository sans écrire manuellement les requêtes SQL complexes \cite{springdatajpa}.
@@ -70,7 +218,147 @@ Dans notre projet, Spring Data JPA est utilisé pour :
 	\item l'authentification des utilisateurs
 \end{itemize}
 
+\subsection{Hibernate}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.30\textwidth]{figures/hibernate.jpeg}
+    \caption{logo de Hibernate}
+    \label{fig:hibernate_logo}
+\end{figure}
+
+Hibernate est une implémentation de la spécification JPA (Java Persistence API). Il assure le mapping objet-relationnel (ORM), permettant de convertir les objets Java en tables relationnelles \cite{hibernate}.
+
+Hibernate gère :
+\begin{itemize}
+    \item Le mapping des entités via annotations (@Entity, @OneToMany, etc.)
+    \item La gestion des transactions
+    \item La génération automatique des requêtes SQL
+\end{itemize}
+
+Dans ce projet, Hibernate fonctionne en arrière-plan via Spring Data JPA \cite{hibernate}.
+
+
+\subsection{Apache Maven}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.30\textwidth]{figures/maven.jpeg}
+    \caption{logo d'Apache Maven}
+    \label{fig:maven_logo}
+\end{figure}
+
+Apache Maven est un outil de gestion et d’automatisation de projet basé sur le concept du Project Object Model (POM). Il permet de gérer les dépendances, compiler le code, exécuter les tests unitaires et générer les artefacts nécessaires au déploiement.
+
+Dans cette application, Maven assure la gestion des bibliothèques telles que Spring Boot, Spring Security, JWT et MySQL Connector. Il facilite également la portabilité du projet entre différents environnements \cite{maven}.
+
+\subsection{Project Lombok}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.30\textwidth]{figures/Lombok.jpeg}
+    \caption{logo de Project Lombok}
+    \label{fig:lombok_logo}
+\end{figure}
+
+Project Lombok est une bibliothèque Java qui réduit considérablement le code répétitif (boilerplate code) en générant automatiquement des méthodes comme les getters, setters, constructeurs et méthodes toString via des annotations.
+
+Dans ce projet, Lombok a permis d’améliorer la lisibilité des classes entités et des modèles, tout en réduisant la complexité du code source \cite{Lombok}.
+
+\section{Technologies Frontend}
+
+Le frontend représente la partie visible de l’application avec laquelle l’utilisateur interagit directement. Il assure l’affichage des données, la mise en forme des interfaces ainsi que l’interactivité du système.
+
+Dans ce projet, le frontend repose sur des technologies web standards combinées avec un moteur de templates côté serveur.
+
+\subsection{HTML}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.15\textwidth]{figures/html.jpeg}
+    \caption{logo de HTML}
+    \label{fig:html_logo}
+\end{figure}
+
+HTML (HyperText Markup Language) est le langage standard de structuration des pages web. Il permet de définir les éléments de base d’une interface, tels que les formulaires, tableaux, boutons et sections.
+
+Dans notre application, HTML est utilisé pour concevoir les différentes interfaces : page d’accueil, formulaire d’inscription, page produit, panier et espace administrateur \cite{html}.
+
+\subsection{CSS}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.15\textwidth]{figures/css.jpeg}
+    \caption{logo de CSS}
+    \label{fig:css_logo}
+\end{figure}
+
+CSS (Cascading Style Sheets) est un langage de mise en forme utilisé pour styliser les pages HTML. Il permet de définir les couleurs, les polices, les espacements, ainsi que la disposition des éléments.
+
+Dans ce projet, CSS est utilisé pour assurer une interface moderne, responsive et ergonomique, améliorant ainsi l’expérience utilisateur \cite{css}.
+
+\subsection{JavaScript}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.15\textwidth]{figures/javascript.jpeg}
+    \caption{logo de JavaScript}
+    \label{fig:javascript_logo}
+\end{figure}
+
+JavaScript est un langage de programmation exécuté côté client dans le navigateur. Il permet d’ajouter de l’interactivité aux pages web \cite{javascript}.
+
+Dans notre plateforme e-commerce, JavaScript est utilisé pour :
+\begin{itemize}
+    \item La gestion dynamique du panier
+    \item Les filtres de recherche
+    \item L’affichage interactif des graphiques statistiques
+\end{itemize}
+
+\subsection{Thymeleaf}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.15\textwidth]{figures/thymeleaf.jpeg}
+    \caption{logo de Thymeleaf}
+    \label{fig:thymeleaf_logo}
+\end{figure}
+
+Thymeleaf est un moteur de templates Java utilisé pour générer des pages HTML dynamiques côté serveur.
+
+Il permet d’intégrer des données provenant du backend directement dans les pages HTML, tout en gardant un code propre et lisible \cite{Thymeleaf}.
+
+\subsection{Chart.js}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{figures/chartJS.jpeg}
+    \caption{logo de Chart.js}
+    \label{fig:chartjs_logo}
+\end{figure}
+
+Chart.js est une bibliothèque JavaScript permettant la création de graphiques interactifs (courbes, barres, diagrammes circulaires).
+
+Dans le tableau de bord administrateur, Chart.js est utilisé pour visualiser :
+\begin{itemize}
+    \item L’évolution du chiffre d’affaires
+    \item La répartition des commandes selon leur statut
+\end{itemize}
+
+Cette visualisation facilite l’analyse des performances commerciales \cite{chartjs}.
+
+\section{Base de données}
+
+La base de données constitue le composant central de persistance du système. Elle assure le stockage structuré et durable des informations relatives aux utilisateurs, produits, commandes et catégories.
+
 \subsection{MySQL}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.20\textwidth]{figures/MySQL.jpeg}
+    \caption{logo de MySQL}
+    \label{fig:mysql_logo}
+\end{figure}
 
 MySQL est un système de gestion de base de données relationnelle (SGBDR) open source. Il permet de stocker, organiser et gérer les données de manière structurée \cite{MySQL}.
 
@@ -83,33 +371,531 @@ Dans notre application, MySQL est utilisé pour :
 	\item Conserver les commandes
 \end{itemize}
 
-\subsection{Thymeleaf}
+\subsection{Configuration de la source de données}
 
-Thymeleaf est un moteur de templates Java utilisé pour générer des pages HTML dynamiques côté serveur.
+La connexion entre l’application Spring Boot et la base MySQL est configurée dans le fichier \texttt{application.properties}.
 
-Il permet d’intégrer des données provenant du backend directement dans les pages HTML, tout en gardant un code propre et lisible \cite{Thymeleaf}.
-
-
-\subsection{Lombok}
-
-Lombok est une bibliothèque Java qui réduit le code répétitif (boilerplate code) en générant automatiquement des méthodes comme getters, setters, constructeurs, etc.
-
-Dans notre projet, Lombok simplifie la définition des entités et améliore la lisibilité du code \cite{Lombok}.
-
-\section{Architecture du projet}
-
-L’application est structurée selon une architecture en couches :
-
+Les paramètres principaux comprennent :
 \begin{itemize}
-	\item Couche Controller : gestion des requêtes HTTP
-	\item Couche Service : logique métier
-	\item Couche Repository : accès aux données
-	\item Couche Model (Entity) : représentation des tables de la base de données
+    \item L’URL de la base de données
+    \item Le nom d’utilisateur
+    \item Le mot de passe
+    \item Le driver JDBC
 \end{itemize}
 
-Cette organisation permet une meilleure maintenabilité et séparation des responsabilités.
+Spring Boot configure automatiquement la source de données grâce à son mécanisme d’auto-configuration.
 
-\section{Conclusion}
+Cette approche simplifie la connexion à la base locale ainsi qu’à la base distante déployée sur Railway.
 
-L’implémentation confirme la faisabilité technique du projet. Le système répond aux objectifs définis tout en restant extensible.
+\subsection{Mapping Objet-Relationnel (ORM)}
 
+Le Mapping Objet-Relationnel (ORM) est une technique permettant de convertir les objets Java en tables relationnelles.
+
+Dans ce projet, Hibernate (via JPA) assure ce mapping à l’aide d’annotations telles que :
+\begin{itemize}
+    \item @Entity
+    \item @Id
+    \item @OneToMany
+    \item @ManyToOne
+\end{itemize}
+
+Cette abstraction permet de manipuler les données sous forme d’objets Java sans écrire directement des requêtes SQL complexes.
+
+\section{Sécurité de l’application}
+
+La sécurité constitue un élément fondamental dans toute application e-commerce. Elle vise à protéger les données sensibles (mots de passe, informations utilisateurs, commandes) et à contrôler l’accès aux différentes fonctionnalités du système.
+
+Dans ce projet, la sécurité repose principalement sur l’intégration de Spring Security, l’utilisation des JSON Web Tokens (JWT) ainsi que le hachage sécurisé des mots de passe avec BCrypt.
+
+\subsection{Concepts fondamentaux}
+
+La sécurité d’une application web repose principalement sur deux notions essentielles :
+
+\begin{itemize}
+    \item \textbf{Authentification} : processus permettant de vérifier l’identité d’un utilisateur (login + mot de passe).
+    \item \textbf{Autorisation} : mécanisme déterminant les droits d’accès d’un utilisateur authentifié (rôle USER ou ADMIN).
+\end{itemize}
+
+Dans notre système, un utilisateur doit d’abord s’authentifier pour obtenir un token JWT. Ensuite, son rôle détermine les ressources accessibles.
+
+\subsection{Spring Security}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.30\textwidth]{figures/springSecurity.jpeg}
+    \caption{logo de Spring Security}
+    \label{fig:springsecurity_logo}
+\end{figure}
+
+Spring Security est un framework puissant dédié à la sécurisation des applications basées sur Spring. Il fournit un ensemble de mécanismes pour :
+
+\begin{itemize}
+    \item Gérer l’authentification
+    \item Contrôler les autorisations
+    \item Protéger contre les attaques CSRF
+    \item Sécuriser les endpoints REST
+\end{itemize}
+
+Dans notre application e-commerce, Spring Security a été configuré pour \cite{springsecurity}:
+
+\begin{itemize}
+    \item Restreindre l’accès aux pages administrateur
+    \item Protéger les routes sensibles
+    \item Intégrer un filtre JWT personnalisé
+\end{itemize}
+
+\subsection{JSON Web Token (JWT)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.30\textwidth]{figures/jwt.jpeg}
+    \caption{logo de JWT}
+    \label{fig:jwt_logo}
+\end{figure}
+
+JSON Web Token (JWT) est un standard ouvert (RFC 7519) permettant l’échange sécurisé d’informations entre deux parties sous forme d’objet JSON signé.
+
+Un token JWT est composé de trois parties :
+\begin{itemize}
+    \item Header
+    \item Payload
+    \item Signature
+\end{itemize}
+
+Dans notre système :
+
+\begin{enumerate}
+    \item L’utilisateur s’authentifie avec ses identifiants.
+    \item Le serveur génère un JWT signé.
+    \item Le client envoie ce token dans l’en-tête HTTP \texttt{Authorization}.
+    \item Le serveur valide le token avant d’autoriser l’accès.
+\end{enumerate}
+
+L’approche JWT permet une architecture \textbf{stateless}, ce qui signifie que le serveur ne conserve pas de session active. Cela améliore la scalabilité et la performance de l’application \cite{jwt}.
+
+\subsection{BCrypt et protection des mots de passe}
+
+Le stockage des mots de passe en clair représente une faille de sécurité critique. Pour éviter cela, nous utilisons l’algorithme BCrypt.
+
+BCrypt est un algorithme de hachage adaptatif qui :
+\begin{itemize}
+    \item Ajoute un \textbf{salt} automatique
+    \item Rend le hachage lent (résistance aux attaques par force brute)
+    \item Permet d’ajuster le facteur de complexité
+\end{itemize}
+
+Spring Security fournit la classe \texttt{BCryptPasswordEncoder} pour encoder les mots de passe avant leur enregistrement en base de données.
+
+Ainsi, même en cas de fuite de données, les mots de passe restent protégés.
+
+\subsection{Gestion des rôles et autorisations}
+
+Le système implémente un contrôle d’accès basé sur les rôles :
+
+\begin{itemize}
+    \item \textbf{ROLE\_USER} : accès aux fonctionnalités classiques (consultation produits, panier, commandes).
+    \item \textbf{ROLE\_ADMIN} : accès au tableau de bord et aux fonctionnalités de gestion (CRUD produits, gestion commandes, codes promo).
+\end{itemize}
+
+Les restrictions sont configurées dans la classe de configuration Spring Security via des règles d’accès sur les endpoints.
+
+Cette séparation garantit que seules les personnes autorisées peuvent modifier les données sensibles.
+
+\subsection{Gestion des rôles et autorisations}
+
+Le système implémente un contrôle d’accès basé sur les rôles :
+
+\begin{itemize}
+    \item \textbf{ROLE\_USER} : accès aux fonctionnalités classiques (consultation produits, panier, commandes).
+    \item \textbf{ROLE\_ADMIN} : accès au tableau de bord et aux fonctionnalités de gestion (CRUD produits, gestion commandes, codes promo).
+\end{itemize}
+
+Les restrictions sont configurées dans la classe de configuration Spring Security via des règles d’accès sur les endpoints.
+
+Cette séparation garantit que seule les personnes autorisées peuvent modifier les données sensibles.
+
+\section{Architecture logicielle du projet}
+
+L’application e-commerce développée repose sur une architecture en couches (Layered Architecture), un modèle d’organisation logicielle permettant de séparer clairement les responsabilités de chaque composant du système.  
+
+Cette approche favorise :
+\begin{itemize}
+    \item Une meilleure lisibilité du code
+    \item Une maintenance facilitée
+    \item Une évolutivité maîtrisée
+    \item Une séparation claire entre logique métier et accès aux données
+\end{itemize}
+
+\subsection{Architecture globale de l’application}
+
+La figure suivante illustre l’architecture logicielle globale de l’application développée avec Spring Boot.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/ArchitectureLogicielle.png}
+    \caption{Architecture globale de l’application Spring Boot}
+    \label{fig:architecture_globale}
+\end{figure}
+
+Cette architecture met en évidence les différentes couches du système ainsi que leurs interactions.
+
+\subsubsection*{1. Couche Frontend}
+
+La couche Frontend correspond à l’interface utilisateur. Elle est composée de pages HTML générées dynamiquement à l’aide du moteur de templates Thymeleaf.  
+
+Les requêtes utilisateur sont envoyées vers le backend via le protocole HTTP en utilisant des appels REST.
+
+\subsubsection*{2. Couche de sécurité}
+
+Avant d’atteindre les contrôleurs, chaque requête passe par une couche de sécurité implémentée avec Spring Security et JWT.
+
+Cette couche :
+\begin{itemize}
+    \item Intercepte les requêtes HTTP
+    \item Vérifie la présence du token JWT
+    \item Valide la signature et l’intégrité du token
+    \item Contrôle les autorisations selon le rôle (USER / ADMIN)
+\end{itemize}
+
+Cette architecture de sécurité garantit que seules les requêtes authentifiées et autorisées accèdent aux ressources protégées.
+
+\subsubsection*{3. Couche Controller}
+
+Les contrôleurs représentent le point d’entrée des requêtes validées.
+
+Ils utilisent les annotations suivantes :
+\begin{itemize}
+    \item \texttt{@GetMapping}
+    \item \texttt{@PostMapping}
+    \item \texttt{@PutMapping}
+    \item \texttt{@DeleteMapping}
+\end{itemize}
+
+Chaque contrôleur reçoit la requête HTTP, traite les paramètres et délègue la logique métier à la couche Service.
+
+\subsubsection*{4. Couche Service (Logique métier)}
+
+La couche Service contient la logique métier de l’application.
+
+Elle gère notamment :
+\begin{itemize}
+    \item L’authentification et la gestion des utilisateurs
+    \item La recherche et la gestion des produits
+    \item La gestion des commandes
+    \item La gestion du panier
+    \item L’application des règles métier
+\end{itemize}
+
+Cette couche assure la cohérence des traitements avant interaction avec la base de données.
+
+\subsubsection*{5. Couche Repository}
+
+La couche Repository assure l’accès aux données via Spring Data JPA.
+
+Elle permet :
+\begin{itemize}
+    \item L’insertion des données
+    \item La récupération des enregistrements
+    \item La mise à jour
+    \item La suppression
+\end{itemize}
+
+Elle abstrait les détails techniques liés à la persistance.
+
+\subsubsection*{6. Couche Model (Entités)}
+
+La couche Model représente les entités métier (User, Product, Order, Cart).
+
+Ces entités sont mappées aux tables relationnelles à l’aide de l’ORM Hibernate.
+
+\subsubsection*{7. Base de données}
+
+La base de données MySQL constitue la couche de persistance finale.
+
+Toutes les opérations CRUD transitent par les différentes couches avant d’atteindre cette couche.
+
+\subsubsection*{8. Modules métier}
+
+Le système est structuré en modules fonctionnels :
+
+\begin{itemize}
+    \item Gestion des utilisateurs
+    \item Gestion des produits
+    \item Gestion des commandes
+    \item Gestion du panier
+\end{itemize}
+
+Chaque module respecte la même architecture en couches, garantissant une cohérence globale du système.
+
+\subsection{Organisation du projet dans l’environnement de développement}
+
+La figure suivante illustre la structure du projet dans l’environnement de développement (IDE). Elle montre l’organisation des packages selon l’architecture en couches.
+
+\begin{figure}[H]
+    \centering
+    
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/structure1.png}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/structure2.png}
+    \end{subfigure}
+    
+    \caption{Architecture en couches du projet dans l’IDE}
+    \label{fig:structure_complete}
+\end{figure}
+
+L’organisation en packages reflète directement la séparation des responsabilités :
+
+\begin{itemize}
+    \item \texttt{controller} : gestion des requêtes HTTP
+    \item \texttt{service} : logique métier
+    \item \texttt{repository} : accès aux données
+    \item \texttt{model} : entités
+    \item \texttt{config} : configuration sécurité et JWT
+\end{itemize}
+
+Cette structuration garantit une architecture claire, modulaire et évolutive.
+
+
+\section{Présentation des fonctionnalités implémentées}
+
+L’application développée offre plusieurs fonctionnalités clés permettant de gérer efficacement une plateforme e-commerce. Ces fonctionnalités sont accessibles via une interface utilisateur intuitive et sont soutenues par une logique métier robuste.
+
+\subsection{Interface d’accueil (Home)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/Home.jpeg}
+    \caption{Interface d’accueil (Home)}
+    \label{fig:home_interface}
+\end{figure}
+
+
+L’interface d’accueil constitue la page principale de la plateforme. Elle représente le premier point de contact entre l’utilisateur et le système. Cette page affiche généralement les produits disponibles, les catégories principales ou les informations promotionnelles.
+
+Elle permet à l’utilisateur de naviguer facilement vers les différentes sections du site, telles que les produits, le panier ou la connexion. L’objectif principal de cette interface est d’offrir une vue claire et structurée du contenu disponible, tout en garantissant une expérience utilisateur intuitive.
+
+D’un point de vue technique, cette page récupère les données depuis la base de données via la couche Service, qui interagit avec la couche Repository. Les informations sont ensuite transmises à la vue pour être affichées dynamiquement à l’aide du moteur de templates.
+
+Cette interface joue un rôle fondamental dans l’ergonomie générale du système, car elle influence directement l’expérience et la navigation de l’utilisateur.
+
+\subsection{Interface d’inscription (Register)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/Register.jpeg}
+    \caption{Interface d’inscription (Register)}
+    \label{fig:register_interface}
+\end{figure}
+
+
+L’interface d’inscription permet aux nouveaux utilisateurs de créer un compte afin d’accéder aux fonctionnalités de la plateforme. L’utilisateur doit renseigner les informations nécessaires telles que le nom, l’adresse e-mail, le mot de passe et éventuellement son rôle (administrateur ou client).
+
+Lors de la soumission du formulaire, les données sont validées côté serveur afin de garantir leur cohérence et leur conformité (format de l’email, champs obligatoires, etc.). Les informations sont ensuite enregistrées dans la base de données via la couche Repository.
+
+Cette fonctionnalité constitue un élément essentiel du système, car elle assure la gestion des accès et la traçabilité des utilisateurs.
+
+\subsection{Interface d’authentification (Login)}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{figures/Login.jpeg}
+	\caption{Interface d’authentification (Login)}
+	\label{fig:login_interface}
+\end{figure}
+
+L’interface de connexion permet aux utilisateurs enregistrés d’accéder à leur espace personnel. L’utilisateur saisit son adresse e-mail et son mot de passe, qui sont ensuite vérifiés par le système.
+
+Le mécanisme d’authentification contrôle la validité des informations saisies et redirige l’utilisateur vers le tableau de bord correspondant à son rôle. Cette étape garantit la sécurité du système en limitant l’accès aux ressources protégées.
+
+\subsection{Consultation des produits}
+
+• Affichage de la liste des produits avec filtres
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{figures/Produits.jpeg}
+	\caption{Interface de consultation des produits}
+	\label{fig:produits_interface}
+\end{figure}
+
+Cette interface permet aux utilisateurs de consulter l’ensemble des produits disponibles sur la plateforme. Les produits sont affichés sous forme structurée, facilitant la navigation et la comparaison.
+
+Un système de filtrage est intégré afin d’améliorer l’expérience utilisateur. L’utilisateur peut affiner sa recherche selon :
+
+\begin{itemize}
+	\item La catégorie du produit
+	\item Une plage de prix spécifique
+\end{itemize}
+
+Ce mécanisme permet de réduire le nombre de résultats affichés et d’accéder plus rapidement aux produits correspondant aux critères recherchés.
+
+D’un point de vue technique, les filtres déclenchent des requêtes dynamiques traitées par le contrôleur. Ces paramètres sont transmis à la couche Service, qui interagit avec la couche Repository pour récupérer uniquement les produits correspondant aux critères sélectionnés.
+
+Cette fonctionnalité améliore significativement l’ergonomie du système et simule le fonctionnement réel des plateformes e-commerce professionnelles.
+
+• Affichage détaillé d’un produit
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{figures/Produit.jpeg}
+	\caption{Interface de consultation détaillée d’un produit}
+	\label{fig:produit_detaille_interface}
+\end{figure}
+
+Cette interface présente les informations détaillées d’un produit sélectionné. Elle affiche généralement :
+
+\begin{itemize}
+	\item Le nom du produit
+	\item La description complète
+	\item Le prix
+	\item La catégorie d’appartenance
+	\item Les options disponibles (taille, couleur, etc.)
+\end{itemize}
+
+L’objectif de cette page est de fournir à l’utilisateur toutes les informations nécessaires avant l’ajout au panier.
+
+Techniquement, l’identifiant du produit est transmis via l’URL au contrôleur, qui récupère les informations correspondantes depuis la base de données. Les données sont ensuite envoyées à la vue pour affichage dynamique.
+
+Cette étape constitue un élément clé du parcours utilisateur, car elle précède l’acte d’achat.
+
+\subsection{Interface du panier(Cart)}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{figures/Panier.jpeg}
+	\caption{Interface du panier (Cart)}
+	\label{fig:cart_interface}
+\end{figure}
+
+L’interface du panier permet à l’utilisateur de consulter les produits qu’il a sélectionnés avant de finaliser sa commande. Elle affiche les informations essentielles telles que le nom du produit, la quantité choisie, le prix unitaire ainsi que le total global de la commande.
+
+L’utilisateur peut modifier la quantité d’un produit ou le supprimer du panier. Il a également la possibilité d’appliquer un code promotionnel afin de bénéficier d’une réduction, de continuer ses achats en retournant vers le catalogue, ou de lancer le processus de commande pour passer à l’étape de validation. Ces fonctionnalités garantissent une grande flexibilité dans le processus d’achat et contribuent à améliorer l’expérience utilisateur.
+
+Sur le plan technique, le panier est généralement géré soit par la session utilisateur, soit par une entité persistée en base de données. Les opérations d’ajout, de suppression, de mise à jour et d’application de promotions sont traitées par la couche Controller, tandis que la logique métier correspondante est assurée par la couche Service.
+
+Le panier constitue une étape intermédiaire essentielle dans le processus de commande, car il prépare la validation finale et l’enregistrement de la transaction dans le système, tout en offrant à l’utilisateur un contrôle complet sur ses choix avant confirmation.
+
+\subsection{Interface de consultation des commandes}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{figures/Commandes.jpeg}
+	\caption{Interface de consultation des commandes}
+	\label{fig:commandes_interface}
+\end{figure}
+
+Cette interface affiche les informations essentielles liées aux commandes, telles que leur état, leur date ou leur contenu, offrant ainsi une vue claire sur les transactions réalisées. Lorsqu’aucune commande n’a encore été enregistrée, un message informatif est présenté pour indiquer la situation, accompagné d’une option permettant de rediriger l’utilisateur vers le catalogue afin de commencer ses achats.
+
+Sur le plan fonctionnel, cette page facilite le suivi des opérations effectuées et renforce la transparence du processus d’achat. Elle contribue à améliorer l’expérience utilisateur en lui donnant un contrôle et une visibilité sur ses interactions avec le système.
+
+D’un point de vue technique, les données des commandes sont récupérées depuis la base de données via la couche Repository, traitées par la couche Service, puis affichées par la couche Controller. Cette organisation garantit une gestion structurée, fiable et maintenable des informations liées aux commandes.
+
+Cette interface représente ainsi une étape importante du parcours utilisateur, en assurant le suivi post-achat et en favorisant une interaction continue avec la plateforme.
+
+\subsection{Interface d'administration des produits}
+
+\begin{figure}[H]
+    \centering
+    
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/GestionProduit.jpeg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/AjoutProduit.jpeg}
+    \end{subfigure}
+    
+    \caption{Interface d'administration des produits}
+    \label{fig:admin_produit_interface}
+\end{figure}
+
+La gestion des produits dans l’application repose sur deux interfaces complémentaires destinées à l’administrateur : une interface de gestion des produits et une interface dédiée à l’ajout de nouveaux produits. Cette séparation permet une organisation claire des fonctionnalités et facilite l’utilisation du système.
+
+L’interface de gestion des produits offre une vue d’ensemble du catalogue. Elle permet à l’administrateur de consulter la liste complète des produits, de modifier leurs informations ou de les supprimer. Elle intègre également une fonctionnalité d’importation CSV, permettant l’ajout massif de produits de manière rapide et efficace, ce qui optimise le processus de gestion du catalogue.
+
+L’interface d’ajout de produit est spécifiquement conçue pour la création d’un nouvel article. Elle propose un formulaire structuré permettant de saisir les informations essentielles telles que le nom, la description, le prix, la catégorie, le stock et l’image. Cette interface favorise une saisie claire et contrôlée des données.
+
+Ensemble, ces deux interfaces implémentent les opérations fondamentales du modèle CRUD (Create, Read, Update, Delete), essentielles aux applications de gestion. Sur le plan architectural, chaque action est traitée par le contrôleur d’administration, qui sollicite la couche Service pour exécuter la logique métier avant interaction avec la base de données. Cette organisation garantit une séparation des responsabilités, une meilleure maintenabilité et une évolutivité du système.
+
+\subsection{Interface d'administration des commandes}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{figures/GestionCommande.jpeg}
+	\caption{Interface d'administration des commandes}
+	\label{fig:admin_commandes_interface}
+\end{figure}
+
+Cette interface permet à l’administrateur de superviser et gérer l’ensemble des commandes effectuées sur la plateforme. Elle présente une vue structurée sous forme de tableau contenant les informations essentielles de chaque commande, notamment l’identifiant, le client, les produits commandés, la date, le montant total ainsi que l’état de la commande.
+
+Le système offre plusieurs fonctionnalités opérationnelles importantes. L’administrateur peut consulter les détails de chaque commande afin d’assurer le suivi des transactions. Des actions directes sont également disponibles pour modifier le statut d’une commande (en attente, confirmée, livrée ou annulée), permettant une gestion dynamique du cycle de traitement.
+
+L’interface intègre également une fonctionnalité d’exportation des données au format CSV, facilitant l’analyse ou l’archivage des commandes en dehors du système. Cette option est particulièrement utile pour la gestion administrative et le reporting.
+
+Sur le plan technique, cette fonctionnalité repose sur une interaction entre la couche Controller et la couche Service, garantissant la récupération, la mise à jour et la persistance des données dans la base de données. Cette organisation assure la cohérence des informations tout en respectant l’architecture en couches adoptée dans le projet.
+
+Ainsi, la gestion des commandes constitue un élément central du système e-commerce, permettant un contrôle efficace des opérations commerciales et assurant la traçabilité complète des transactions.
+
+\subsection{Interface d'administration des codes promotionnels}
+
+\begin{figure}[H]
+    \centering
+    
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/CodePromoCreation.jpeg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/CodePromoGestion.jpeg}
+    \end{subfigure}
+    
+    \caption{Interface d'administration des codes promotionnels}
+    \label{fig:admin_code_promo_interface}
+\end{figure}
+
+Cette section présente le module de gestion des codes promotionnels, destiné exclusivement à l’administrateur. Ce module permet de créer, configurer et administrer des offres promotionnelles afin d’influencer dynamiquement le prix des produits et d’encourager les achats.
+
+La première interface permet la création d’un nouveau code promotionnel. L’administrateur peut définir plusieurs paramètres essentiels, tels que le nom du code, sa description, le type de remise (pourcentage ou montant fixe), la valeur appliquée, la période de validité ainsi que la limite d’utilisation. Ces informations permettent un contrôle précis du comportement du code promotionnel et garantissent sa cohérence avec les règles commerciales définies.
+
+La seconde interface est dédiée à la gestion des codes existants. Elle offre des fonctionnalités administratives complètes permettant de modifier les paramètres d’un code, de l’activer ou de le désactiver selon les besoins, ou encore de le supprimer. Cette gestion dynamique permet d’adapter rapidement les stratégies promotionnelles en fonction du contexte commercial.
+
+Sur le plan technique, ces opérations reposent sur l’interaction entre les couches Controller et Service, assurant la validation des données et leur enregistrement dans la base de données. Ce module illustre la capacité du système à intégrer des mécanismes commerciaux avancés tout en respectant l’architecture logicielle adoptée.
+
+Ainsi, la gestion des codes promotionnels constitue un outil stratégique au sein de la plateforme e-commerce, offrant flexibilité et contrôle dans la mise en œuvre des politiques de tarification.
+
+\subsection{Tableau de bord administrateur (Admin Dashboard)}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{figures/AdminDashboard.jpeg}
+	\caption{Interface du tableau de bord administrateur}
+	\label{fig:admin_dashboard_interface}
+\end{figure}
+
+Le tableau de bord administrateur constitue l’interface centrale de supervision du système e-commerce. Il offre une vue synthétique et analytique des principales données relatives à l’activité de la plateforme.
+
+Dans la partie supérieure, des indicateurs statistiques globaux sont affichés sous forme de cartes récapitulatives. Ces indicateurs comprennent notamment :
+
+\begin{itemize}
+	\item Le nombre total de produits disponibles
+	\item Le nombre d’utilisateurs inscrits
+	\item Le nombre de commandes passées
+	\item Le chiffre d’affaires généré
+\end{itemize}
+
+Ces métriques permettent à l’administrateur d’avoir une vision rapide et claire de la performance globale du système.
+
+La section suivante présente un graphique illustrant l’évolution du chiffre d’affaires sur les sept derniers jours. Cette représentation dynamique permet d’analyser les tendances de vente et d’identifier d’éventuelles variations d’activité. Les données sont récupérées depuis la base de données, agrégées côté serveur via la couche Service, puis affichées sous forme graphique à l’aide d’une bibliothèque de visualisation chart.js.
+
+Enfin, un diagramme circulaire présente la répartition des commandes selon leur statut (en attente, livrée, annulée). Cette visualisation facilite le suivi opérationnel et permet d’identifier rapidement la proportion des commandes traitées ou en cours.
+
+D’un point de vue architectural, le tableau de bord centralise des données provenant de plusieurs entités (Commandes, Produits, Utilisateurs) et démontre l’intégration cohérente des différentes couches du système. Il constitue ainsi un outil stratégique d’aide à la décision pour l’administrateur.
